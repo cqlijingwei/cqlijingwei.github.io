@@ -21,7 +21,7 @@ a {
 
 .page-title {
   text-align: center;
-  font-weight: 100;
+  font-weight: bold;
 }
 
 .page-description {
@@ -31,22 +31,6 @@ a {
   padding: 30px;
 }
 
-.gallery {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.gallery-item {
-  margin: 20px;
-}
-
-.gallery-item .thumbnail {
-  border: 5px solid #fff;
-}
-
-/* FOOTER NAVIGATION */
 
 nav {
   background-color: #FFF;
@@ -60,22 +44,6 @@ nav li {
 
 nav ul {
   display: inline;
-}
-
-.contact-btn {
-  float: right;
-}
-
-.contact-btn a {
-  cursor: pointer;
-  margin-right: 30px;
-  padding: 8px 18px;
-  border: 1px solid #204156;
-	position: relative;
-}
-
-.contact-btn a:active {
-	top: 2px;
 }
 
 nav a {
