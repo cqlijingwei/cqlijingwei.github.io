@@ -64,7 +64,18 @@ footer ul {
   list-style: none;
 }
 
+footer li {
+    float: left;
+}
+
 footer li img {
   width: 2px;
   height: 2px;
+}
+
+footer li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
 }
