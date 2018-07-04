@@ -28,7 +28,6 @@ a {
   margin: 2px;
   text-align: center;
   padding: 30px;
-  font-weight: 500;
 }
 
 
@@ -55,6 +54,9 @@ nav a {
 
 footer {
   font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 20px 0;
 }
 
