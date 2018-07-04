@@ -62,6 +62,7 @@ footer {
 
 footer ul {
   list-style: none;
+  display: inline;
 }
 
 footer li img {
