@@ -8,7 +8,7 @@ html, body {
 
 body {
   font-family: 'Lato', sans-serif;
-  background-image: url('https://github.com/cqlijingwei/cqlijingwei.github.io/blob/master/56A63D74-E0A5-40DC-96B5-910C20DEEC76.jpeg');
+  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg');
   background-position: center top;
   background-size: cover;
   margin: 0;
