@@ -237,7 +237,7 @@ p {
 
 .unitLeft input, .unitMid input, .unitRight input {
   float: right;
-  margin-right: 3em;
+  margin-right: 5em;
 }
 
 footer {
