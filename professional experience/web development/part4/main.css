@@ -222,19 +222,19 @@ p {
 .unitLeft {
   float: left;
   width: 33%;
-  display: inline;
+  display: inline-block;
 }
 
 .unitMid {
   margin-left: 33%;
   width: 33%;
-  display: inline;
+  display: inline-block;
 }
 
 .unitRight {
   margin-left: 67%;
   width: 33%;
-  display: inline;
+  display: inline-block;
 }
 
 .unitLeft input, .unitMid input, .unitRight input {
