@@ -219,6 +219,21 @@ p {
   background-color: rgba(0,0,0,0.8);
 }
 
+.unitLeft {
+  float: left;
+  width: 33%
+}
+
+.unitMid {
+  margin-left: 33%;
+  width: 33%;
+}
+
+.unitRight {
+  margin-left: 67%;
+  width: 33%;
+}
+
 footer {
   overflow: hidden;
   left:0;
