@@ -221,17 +221,17 @@ p {
 
 .unitLeft {
   float: left;
-  width: 33%;
+  width: 30%;
   display: inline-block;
 }
 
 .unitMid {
-  width: 33%;
+  width: 30%;
   display: inline-block;
 }
 
 .unitRight {
-  width: 33%;
+  width: 30%;
   display: inline-block;
 }
 
