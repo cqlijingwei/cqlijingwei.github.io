@@ -221,17 +221,25 @@ p {
 
 .unitLeft {
   float: left;
-  width: 33%
+  width: 33%;
+  display: inline;
 }
 
 .unitMid {
   margin-left: 33%;
   width: 33%;
+  display: inline;
 }
 
 .unitRight {
   margin-left: 67%;
   width: 33%;
+  display: inline;
+}
+
+.unitLeft input, .unitMid input, .unitRight input {
+  float: right;
+  margin-right: 10em;
 }
 
 footer {
