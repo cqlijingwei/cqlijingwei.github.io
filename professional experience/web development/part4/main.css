@@ -231,13 +231,13 @@ p {
 }
 
 .unitRight {
-  width: 30%;
+  width: 28%;
   display: inline-block;
 }
 
 .unitLeft input, .unitMid input, .unitRight input {
   float: right;
-  margin-right: 10em;
+  margin-right: 3em;
 }
 
 footer {
