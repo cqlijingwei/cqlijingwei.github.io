@@ -226,13 +226,11 @@ p {
 }
 
 .unitMid {
-  margin-left: 33%;
   width: 33%;
   display: inline-block;
 }
 
 .unitRight {
-  margin-left: 67%;
   width: 33%;
   display: inline-block;
 }
