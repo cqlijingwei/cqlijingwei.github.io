@@ -26,8 +26,20 @@ function setUnit() {
 			document.getElementById("unit6").innerHTML = "Inch(in)";
 			break;
 		case 'area':
+			document.getElementById("unit1").innerHTML = "Square Meter(m^2)";
+			document.getElementById("unit2").innerHTML = "Square Centimeter(cm^2)";
+			document.getElementById("unit3").innerHTML = "Square Kilometer(km^2)";
+			document.getElementById("unit4").innerHTML = "Acre(ac)";
+			document.getElementById("unit5").innerHTML = "Square Foot(ft^2)";
+			document.getElementById("unit6").innerHTML = "Square Inch(in^2)";
 			break;
 		case 'volume':
+			document.getElementById("unit1").innerHTML = "Cubic Meter(m^3)";
+			document.getElementById("unit2").innerHTML = "Cubic Centimeter(cm^3)";
+			document.getElementById("unit3").innerHTML = "Cubic Kilometer(km^3)";
+			document.getElementById("unit4").innerHTML = "Liter(L)";
+			document.getElementById("unit5").innerHTML = "Milliliter(mL)";
+			document.getElementById("unit6").innerHTML = "Gallon(gal)";
 			break;
 	}
 }
@@ -79,8 +91,20 @@ function unitConvert(val, origId, currId, unitName)
 			w6=0.0254;
 			break;
 		case 'area':
+			w1=1.000;
+			w2=0.0001;
+			w3=1000000.000;
+			w4=4046.8564224;
+			w5=0.09290304;
+			w6=0.00064516;
 			break;
 		case 'volume':
+			w1=1.000;
+			w2=1.0e-6;
+			w3=1.0e9;
+			w4=0.001;
+			w5=1.0e-6;
+			w6=0.0037854118;
 			break;
 	}
 
