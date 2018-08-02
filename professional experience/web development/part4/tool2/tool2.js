@@ -30,15 +30,15 @@ function mortgage()
 	var interest = document.getElementById("interest").value;
 	var period = document.getElementById("period").value;
 	var frequency = document.getElementById("frequency").value;
-	var x = document.getElementById("payment").innerHTML;
-	var y = document.getElementById("totalPayment").innerHTML;
-	var z = document.getElementById("totalInterest").innerHTML;
+	var x;
+	var y;
+	var z;
 
 	if(principal == "" || interest == "" || period == "")
 	{
-		x = "";
-		y = "";
-		z = "";
+		document.getElementById("payment").innerHTML = "";
+		document.getElementById("totalPayment").innerHTML = "";
+		document.getElementById("totalInterest").innerHTML = "";
 	}	
 	else {
 		var i = interest/100.00;
@@ -67,5 +67,9 @@ function mortgage()
 		x = x.toFixed(2);
 		y = y.toFixed(2);
 		z = z.toFixed(2);
+
+		document.getElementById("payment").innerHTML = x;
+		document.getElementById("totalPayment").innerHTML = y;
+		document.getElementById("totalInterest").innerHTML = z;
 	}
 }
