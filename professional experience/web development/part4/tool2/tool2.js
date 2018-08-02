@@ -41,8 +41,8 @@ function mortgage()
 		document.getElementById("totalInterest").innerHTML = "";
 	}	
 	else {
-		var i = interest/100.00;
-		var n=0;
+		var i = parseFloat(interest)/100.00;
+		var n=1;
 		switch (frequency.value) {
 			case 'monthly':
 				i=i/12;
