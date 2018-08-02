@@ -43,7 +43,7 @@ function mortgage()
 	else {
 		var i = parseFloat(interest)/100.00;
 		var n=1;
-		switch (frequency.value) {
+		switch (frequency) {
 			case 'monthly':
 				i=i/12;
 				n=12;
