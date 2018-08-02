@@ -57,11 +57,11 @@ function mortgage()
 				n=52;
 				break;
 		}
-		var N = n * period;
-		var FVofOne = Math.pow((1+i), N);
+		var paymentN = n * period;
+		var FVofOne = Math.pow((1+i), paymentN);
 
 		x = principal * i * FVofOne/(FVofOne-1);
-		y = x * N;
+		y = x * paymentN;
 		z = y - principal;
 
 		x = x.toFixed(2);
