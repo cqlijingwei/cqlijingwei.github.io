@@ -14,6 +14,12 @@ function setUnit() {
 			document.getElementById("unit6").innerHTML = "US Stone(st)";
 			break;
 		case 'length':
+			document.getElementById("unit1").innerHTML = "Meter(m)";
+			document.getElementById("unit2").innerHTML = "Centimeter(cm)";
+			document.getElementById("unit3").innerHTML = "Kilometer(km)";
+			document.getElementById("unit4").innerHTML = "Mile(mi)";
+			document.getElementById("unit5").innerHTML = "Foot(ft)";
+			document.getElementById("unit6").innerHTML = "Inch(in)";
 			break;
 		case 'area':
 			break;
@@ -61,6 +67,12 @@ function unitConvert(val, origId, currId, unitName)
 			w6=5.669904625;
 			break;
 		case 'length':
+			w1=1.000;
+			w2=0.01;
+			w3=1000.000;
+			w4=1609.344;
+			w5=0.3048;
+			w6=0.0254;
 			break;
 		case 'area':
 			break;
