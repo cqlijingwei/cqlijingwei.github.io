@@ -1,6 +1,27 @@
 var category = document.getElementById('measureCate');
+var w1,w2,w3,w4,w5,w6; w1,w2,w3,w4,w5,w6=1;
 
-// Function from online resource
+setUnit();
+
+function setUnit() {
+	switch(category.value) {
+		case 'weight':
+			document.getElementById("unit1").innerHTML = "Kilogram(kg)";
+			document.getElementById("unit2").innerHTML = "Gram(g)";
+			document.getElementById("unit3").innerHTML = "Metric Ton(t)";
+			document.getElementById("unit4").innerHTML = "Pound(lbs)";
+			document.getElementById("unit5").innerHTML = "Ounce(oz)";
+			document.getElementById("unit6").innerHTML = "US Stone(st)";
+			break;
+		case 'length':
+			break;
+		case 'area':
+			break;
+		case 'volume':
+			break;
+	}
+}
+
 function numberOnly(input, obj)
 {
 	var ev = input || window.event;
@@ -17,7 +38,6 @@ function numberOnly(input, obj)
 	}
 }
 
-// Function from online resource
 function convert(obj)
 {
 	var originalIdTag = obj.getAttribute("id")
@@ -25,143 +45,143 @@ function convert(obj)
 	for (var i = 0; i < textBoxes.length; i++) 
 	{
 		var currIdTag = textBoxes[i].getAttribute("id");
-		textBoxes[i].value = unitConvert(obj.value, originalIdTag, currIdTag);
+		textBoxes[i].value = unitConvert(obj.value, originalIdTag, currIdTag, category.value);
 	}
 }
 
-function unitConvert(val, origId, currId) {
-	switch (category.value) {
+function unitConvert(val, origId, currId, unitName)
+{
+	switch (unitName) {
 		case 'weight':
-			weightConvert(val, origId, currId);
+			w1=1.000;
+			w2=0.001;
+			w3=1000.000;
+			w4=0.45359237;
+			w5=0.0283495231;
+			w6=5.669904625;
 			break;
 		case 'length':
-			lengthConvert(val, origId, currId);
 			break;
 		case 'area':
-			areaConvert(val, origId, currId);
 			break;
 		case 'volume':
-			volumeConvert(val, origId, currId);
 			break;
 	}
-}
 
-function weightConvert(val, origId, currId)
-{
-	if(origId == "kg")
+	if(origId == "unit1val")
 	{
 		switch (currId) {
-			case "kg":
+			case "unit1val":
 				return val;
-			case "g":
-				return parseFloat(val)*1000;
-			case "lbs":
-				return parseFloat(val)*2.20462;
-			case "oz":
-				return parseFloat(val)*35.274;
-			case "st":
-				return parseFloat(val)*0.157473;
-			case "tn":
-				return parseFloat(val)*0.00110231;
+			case "unit2val":
+				return parseFloat(val)*w1/w2;
+			case "unit3val":
+				return parseFloat(val)*w1/w3;
+			case "unit4val":
+				return parseFloat(val)*w1/w4;
+			case "unit5val":
+				return parseFloat(val)*w1/w5;
+			case "unit6val":
+				return parseFloat(val)*w1/w6;
 			default:
 				return val + "(could not convert)";
 		}
 	}
 	
-	if(origId == "g")
+	if(origId == "unit2val")
 	{
 		switch (currId) {
-			case "kg":
-				return parseFloat(val)*0.001;
-			case "g":
+			case "unit1val":
+				return parseFloat(val)*w2/w1;
+			case "unit2val":
 				return val;
-			case "lbs":
-				return parseFloat(val)*0.00220462;
-			case "oz":
-				return parseFloat(val)*0.035274;
-			case "st":
-				return parseFloat(val)*0.000157473;
-			case "tn":
-				return parseFloat(val)*0.00000110231;
+			case "unit3val":
+				return parseFloat(val)*w2/w3;
+			case "unit4val":
+				return parseFloat(val)*w2/w4;
+			case "unit5val":
+				return parseFloat(val)*w2/w5;
+			case "unit6val":
+				return parseFloat(val)*w2/w6;
 			default:
 				return val + "(could not convert)";
 		}
 	}
 	
-	if(origId == "lbs")
+	if(origId == "unit3val")
 	{
 		switch (currId) {
-			case "kg":
-				return parseFloat(val)*0.453592;
-			case "g":
-				return parseFloat(val)*453.592;
-			case "lbs":
+			case "unit1val":
+				return parseFloat(val)*w3/w1;
+			case "unit2val":
+				return parseFloat(val)*w3/w2;
+			case "unit3val":
 				return val;
-			case "oz":
-				return parseFloat(val)*16;
-			case "st":
-				return parseFloat(val)*0.0714286;
-			case "tn":
-				return parseFloat(val)*0.0005;
+			case "unit4val":
+				return parseFloat(val)*w3/w4;
+			case "unit5val":
+				return parseFloat(val)*w3/w5;
+			case "unit6val":
+				return parseFloat(val)*w3/w6;
 			default:
 				return val + "(could not convert)";
 		}
 	}
 	
-	if(origId == "oz")
+	if(origId == "unit4val")
 	{
 		switch (currId) {
-			case "kg":
-				return parseFloat(val)*0.0283495;
-			case "g":
-				return parseFloat(val)*28.3495;
-			case "lbs":
-				return parseFloat(val);
-			case "oz":
+			case "unit1val":
+				return parseFloat(val)*w4/w1;
+			case "unit2val":
+				return parseFloat(val)*w4/w2;
+			case "unit3val":
+				return parseFloat(val)*w4/w3;
+			case "unit4val":
 				return val;
-			case "st":
-				return parseFloat(val)*0.00446429;
-			case "tn":
-				return parseFloat(val)*0.00003125;
+			case "unit5val":
+				return parseFloat(val)*w4/w5;
+			case "unit6val":
+				return parseFloat(val)*w4/w6;
 			default:
 				return val + "(could not convert)";
 		}
 	}
 
-	if(origId == "st")
+	if(origId == "unit5val")
 	{
 		switch (currId) {
-			case "kg":
-				return parseFloat(val)*6.35029;
-			case "g":
-				return parseFloat(val)*6350.29;
-			case "lbs":
-				return parseFloat(val)*14;
-			case "oz":
-				return parseFloat(val)*224;
-			case "st":
+			case "unit1val":
+				return parseFloat(val)*w5/w1;
+			case "unit2val":
+				return parseFloat(val)*w5/w2;
+			case "unit3val":
+				return parseFloat(val)*w5/w3;
+			case "unit4val":
+				return parseFloat(val)*w5/w4;
+			case "unit5val":
 				return val;
-			case "tn":
-				return parseFloat(val)*0.007;
+			case "unit6val":
+				return parseFloat(val)*w5/w6;
 			default:
 				return val + "(could not convert)";
 		}
 	}
 
-	if(origId == "tn")
+	if(origId == "unit6val")
 	{
 		switch (currId) {
-			case "kg":
-				return parseFloat(val)*907.185;
-			case "g":
-				return parseFloat(val)*907185;
-			case "lbs":
-				return parseFloat(val)*2000;
-			case "oz":
-				return parseFloat(val)*32000;
-			case "st":
-				return parseFloat(val)*142.857;
-			case "tn":
+			case "unit1val":
+				return parseFloat(val)*w6/w1;
+			case "unit2val":
+				return parseFloat(val)*w6/w2;
+			case "unit3val":
+				return parseFloat(val)*w6/w3;
+			case "unit4val":
+				return parseFloat(val)*w6/w4;
+			case "unit5val":
+				return parseFloat(val)*w6/w5;
+			case "unit6val":
 				return val;
 			default:
 				return val + "(could not convert)";
