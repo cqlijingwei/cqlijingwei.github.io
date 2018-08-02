@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+.document {
+  width: 88%;
+}
+
 .page-banner {
   position: absolute;
   background-color: purple;
@@ -237,7 +241,7 @@ p {
 
 .unitLeft input, .unitMid input, .unitRight input {
   float: right;
-  margin-right: 5em;
+  margin-right: 3em;
 }
 
 footer {
