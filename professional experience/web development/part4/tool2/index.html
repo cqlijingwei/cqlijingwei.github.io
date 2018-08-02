@@ -10,5 +10,23 @@
 
 <body>
   <h3 style="text-align: center;">Mortgage Calculator</h3>
+
+  <div class="content" style="text-align: center;">
+  	<p>Mortgage Principal Amount($):<input id="principal" type="text" onkeypress="numberOnly(event, this)" onkeyup="mortgage()" onfocus="this.select();"></p>
+  	<p>Interest Rate(%):<input id="interest" type="text" onkeypress="numberOnly(event, this)" onkeyup="mortgage()" onfocus="this.select();"></p>
+  	<p>Amortization Period(year):<input id="period" type="text" onkeypress="numberOnly(event, this)" onkeyup="mortgage()" onfocus="this.select();"></p>
+  	<p>Payment Frequency:
+		<select id="frequency" value="monthly">
+			<option value="monthly">Monthly</option>
+			<option value="biweekly">Bi-Weekly</option>
+			<option value="weekly">Weekly</option>
+		</select>
+  	</p>
+  	<p>Payment Amount: <span id="payment"></span></p>
+  	<p>Total Payments Over Term: <span id="totalPayment"></span></p>
+  	<p>Interest Paid: <span id="totalInterest"></span></p>
+  </div>
+
+  <script src="https://cqlijingwei.github.io/professional%20experience/web%20development/part4/tool2/tool2.js" type="text/javascript"></script>
 </body>
 </html>
