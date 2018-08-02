@@ -12,9 +12,12 @@
   <h3 style="text-align: center;">Mortgage Calculator</h3>
 
   <div class="content" style="text-align: center;">
-  	<p>Mortgage Principal Amount($):<input id="principal" type="text" onkeypress="numberOnly(event, this)" onkeyup="mortgage()" onfocus="this.select();"></p>
-  	<p>Interest Rate(%):<input id="interest" type="text" onkeypress="numberOnly(event, this)" onkeyup="mortgage()" onfocus="this.select();"></p>
-  	<p>Amortization Period(year):<input id="period" type="text" onkeypress="numberOnly(event, this)" onkeyup="mortgage()" onfocus="this.select();"></p>
+  	<p>Mortgage Principal Amount($):</p>
+    <input id="principal" type="text" onkeypress="numberOnly(event, this)" onkeyup="mortgage()" onfocus="this.select();">
+  	<p>Interest Rate(%):</p>
+    <input id="interest" type="text" onkeypress="numberOnly(event, this)" onkeyup="mortgage()" onfocus="this.select();">
+  	<p>Amortization Period(year):</p>
+    <input id="period" type="text" onkeypress="numberOnly(event, this)" onkeyup="mortgage()" onfocus="this.select();">
   	<p>Payment Frequency:
 		<select id="frequency" value="monthly">
 			<option value="monthly">Monthly</option>
