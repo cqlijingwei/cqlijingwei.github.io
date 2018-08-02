@@ -56,6 +56,9 @@ function mortgage()
 				i=i/52;
 				n=52;
 				break;
+			default:
+				i=i/12;
+				n=12;
 		}
 		var paymentN = n * period;
 		var FVofOne = Math.pow((1+i), paymentN);
