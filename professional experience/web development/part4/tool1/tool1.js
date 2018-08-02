@@ -3,6 +3,10 @@ var w1,w2,w3,w4,w5,w6; w1,w2,w3,w4,w5,w6=1;
 
 setUnit();
 
+category.onchange()= function() {
+	setUnit();
+}
+
 function setUnit() {
 	switch(category.value) {
 		case 'weight':
