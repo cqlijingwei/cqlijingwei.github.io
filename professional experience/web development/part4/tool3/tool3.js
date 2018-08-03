@@ -1,12 +1,25 @@
-var numOfCourse = document.getElementById("courseNum").value;
-
 window.onload = function() {
 	getGPA();
 }
 
-if ( numOfCourse > 0 ) {
-	addCourses();
-}
+$(document).ready(function() {
+    var max_fields      = 10;
+    var wrapper         = $(".container1"); 
+    var add_button      = $(".add_form_field"); 
+    
+    var x = 0; 
+    $(add_button).click(function(e){ 
+        e.preventDefault();
+        if(x < max_fields){ 
+            x++; 
+            $(wrapper).append('<div><p>Course '+x+':<input type="text" name="mytext[]"/> Weight/Credit:<input type="text" name="mytext[]"/></p></div>'); //add input box
+        }
+		else
+		{
+		alert('You Reached the limits')
+		}
+    });
+});
 
 function numberOnly(input, obj)
 {
@@ -21,42 +34,6 @@ function numberOnly(input, obj)
 		event.returnValue = false;
 		if(ev.preventDefault) 
 			ev.preventDefault();
-	}
-}
-
-function addCourses() {
-	var i;
-	if (numOfCourse > 40) {
-		document.getElementById("Error").innerHTML = "Error! Your input exceeds the maximum course number."
-		return;
-	}
-
-	var container = document.getElementById("container");
-
-	while (container.hasChildNodes()) {
-		container.removeChild(container.lastChild);
-	}
-
-	for (i=0;i<numOfCourse;i++) {
-		container.appendChild(document.createTextNode("Course " +(i+1)));
-		var input1 = document.createElement("input");
-		input1.type = "text";
-		input1.name = i;
-		input1.id = "courseGP";
-		input1.onkeypress=function(){numberOnly(event, this);}
-		input1.onkeyup=function(){getGPA();}
-		input1.onfocus=function(){this.select();}
-		container.appendChild(input1);
-		container.appendChild(document.createTextNode("Weight/Credit"));
-		var input2 = document.createElement("input");
-		input2.type = "text";
-		input2.name = i;
-		input2.id = "courseWei";
-		input2.onkeypress=function(){numberOnly(event, this);}
-		input2.onkeyup=function(){getGPA();}
-		input2.onfocus=function(){this.select();}
-		container.appendChild(input2);
-		container.appendChild(document.createElement("br"));
 	}
 }
 
