@@ -26,6 +26,7 @@
   </div>
 
   <div id="result" style="text-align: center;">
+  	<p>Total Credits:<span id="credits"></span></p>
   	<p>cGPA calculated:<span id="cGPA"></span></p>
   </div>
 
@@ -44,13 +45,14 @@
 	        if(x < max_fields){ 
 	            x++; 
 	            $(wrapper).append('<div><p>Course '+x+' Grade Point:<input type="text" id="h'+x+'" name="point" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"> Weight/Credit:<input type="text" id="h'+x+'" name="weight" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"></p></div>'); //add input box
+
+				$(update).replaceWith('<span id="numCourse" value="'+x+'">'+x+'</span>');
 	        }
 			else
 			{
 			alert('You Reached the limits')
 			}
 	    });
-	    $(update).replaceWith('<span id="numCourse" value="'+x+'">'+x+'</span>');
 	});
   </script>
 </body>
