@@ -1,5 +1,3 @@
-var x=0; //Number of Course
-
 window.onload = function() {
 	getGPA();
 }
@@ -27,13 +25,14 @@ function getGPA()
 	var curGPA = document.getElementById("currentVal").value;
 	var curWeight = document.getElementById("currentWei").value;
 	var GPA=0.00;
+	var numOfCourse = document.getElementsById("courseGP").length;
 
 	if (curGPA != "" && curWeight != "") {
 		cGP += curGPA * curWeight;
 		cWeight += curWeight;
 	}
 
-	if (x != 0) {
+	if (numOfCourse != 0) {
 		var textBoxes1 = document.getElementsById("courseGP");
 		var textBoxes2 = document.getElementsById("courseWei");
 		for (var i=0; i<textBoxes1.length; i++) {
