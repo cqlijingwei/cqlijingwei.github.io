@@ -1,3 +1,5 @@
+var x=0; //Number of Course
+
 window.onload = function() {
 	getGPA();
 }
@@ -7,7 +9,7 @@ $(document).ready(function() {
     var wrapper         = $(".container1"); 
     var add_button      = $(".add_form_field"); 
     
-    var x = 0; 
+    x = 0; 
     $(add_button).click(function(e){ 
         e.preventDefault();
         if(x < max_fields){ 
@@ -50,7 +52,7 @@ function getGPA()
 		cWeight += curWeight;
 	}
 
-	if (numOfCourse != "") {
+	if (x != 0) {
 		var textBoxes1 = document.getElementsById("courseGP");
 		var textBoxes2 = document.getElementsById("courseWei");
 		for (var i=0; i<textBoxes1.length; i++) {
