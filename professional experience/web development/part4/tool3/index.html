@@ -6,6 +6,30 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../main.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+  <script type="text/javascript">
+  	function addCourses(){
+  		var numOfCourse = document.getElementById("courseNum").value;
+  		var container = document.getElementById("container");
+  		while (container.hasChildNodes()) {
+  			container.removeChild(container.lastChild);
+  		}
+  		for (i=0;i<numOfCourse;i++) {
+  			container.appendChild(document.createTextNode("Course "+(i+1)));
+  			var input1 = document.createElement("input");
+  			input1.type = "text";
+  			input1.name = i;
+  			input1.id = "courseGP";
+  			container.appendChild(input1);
+  			container.appendChild(document.createTextNode("Weight/Credit"));
+  			var input2 = document.createElement("input");
+  			input2.type = "text";
+  			input2.name = i;
+  			input2.id = "courseWei";
+  			container.appendChild(input2);
+  			container.appendChild(document.createElement("br"));
+  		}
+  	}
+  </script>
 </head>
 
 <body>
@@ -16,8 +40,10 @@
   	<p>Current GPA(Optional):<input id="currentVal" type="text" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"> Weight/Credit:<input id="currentWei" type="text" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"></p>
   </div>
 
-  <div class="numberOfCourse" id="numCourse" style="text-align: center;">
-  	<p>Number of Course to be Calculated(Maximum. 40):<input id="courseNum" type="text" onkeypress="numberOnly(event, this)" onkeyup="addCourses()" onfocus="this.select();"></p>
+  <div class="course" id="course" style="text-align: center;">
+  	<p>Number of Course to be Calculated(Maximum. 40):<input id="courseNum" type="text" value="" onkeypress="numberOnly(event, this)" onfocus="this.select();"><br />
+  	<a href="#" id="addCourses" onclick="addCourses()">Add Courses</a>
+  	</p>
   </div>
 
   <div id="container"></div>
