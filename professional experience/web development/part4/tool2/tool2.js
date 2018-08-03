@@ -1,6 +1,6 @@
-var frequency = document.getElementById("frequency");
+var freq = document.getElementById("frequency");
 
-frequency.onchange = function() {
+freq.onchange = function() {
 	mortgage();
 }
 
