@@ -75,12 +75,14 @@ function getGPA()
 		cWeight += curWeight;
 	}
 
-	for (var i=0; i<textBoxes1.length; i++) {
-		for (var j=0; j<textBoxes2.length; j++) {
-			if (textBoxes1[i].getAttribute("name")==textBoxes2[j].getAttribute("name")) {
-				if (textBoxes1[i].value != "" && textBoxes2[j].value != "") {
-					cGP += textBoxes1[i].value * textBoxes2[j].value;
-					cWeight += textBoxes2[j].value;
+	if (numOfCourse != "") {
+		for (var i=0; i<textBoxes1.length; i++) {
+			for (var j=0; j<textBoxes2.length; j++) {
+				if (textBoxes1[i].getAttribute("name")==textBoxes2[j].getAttribute("name")) {
+					if (textBoxes1[i].value != "" && textBoxes2[j].value != "") {
+						cGP += textBoxes1[i].value * textBoxes2[j].value;
+						cWeight += textBoxes2[j].value;
+					}
 				}
 			}
 		}
