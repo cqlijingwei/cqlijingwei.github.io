@@ -18,6 +18,7 @@
 
   <div class="container1" style="text-align: center;">
     <button class="add_form_field">Add New Course &nbsp; <span style="font-size:16px; font-weight:bold;">+ </span></button>
+	<div><p>Course 1 Grade Point:<input type="text" id="courseGP" name="1" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"> Weight/Credit:<input type="text" id="courseWei" name="1" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"></p></div>
   </div>
 
   <div class="ErrorMessage">
@@ -36,7 +37,7 @@
 	    var wrapper         = $(".container1"); 
 	    var add_button      = $(".add_form_field"); 
 	    
-	    var x = 0; 
+	    var x = 1; 
 	    $(add_button).click(function(e){ 
 	        e.preventDefault();
 	        if(x < max_fields){ 
