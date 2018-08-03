@@ -41,7 +41,7 @@
 	        e.preventDefault();
 	        if(x < max_fields){ 
 	            x++; 
-	            $(wrapper).append('<div><p>Course '+x+' Grade Point:<input type="text" name="mytext[]"/> Weight/Credit:<input type="text" name="mytext[]"/></p></div>'); //add input box
+	            $(wrapper).append('<div><p>Course '+x+' Grade Point:<input type="text" id="courseGP" name="x" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"> Weight/Credit:<input type="text" id="courseWei" name="x" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"></p></div>'); //add input box
 	        }
 			else
 			{
