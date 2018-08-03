@@ -4,25 +4,6 @@ window.onload = function() {
 	getGPA();
 }
 
-$(document).ready(function() {
-    var max_fields      = 10;
-    var wrapper         = $(".container1"); 
-    var add_button      = $(".add_form_field"); 
-    
-    x = 0; 
-    $(add_button).click(function(e){ 
-        e.preventDefault();
-        if(x < max_fields){ 
-            x++; 
-            $(wrapper).append('<div><p>Course '+x+':<input type="text" name="mytext[]"/> Weight/Credit:<input type="text" name="mytext[]"/></p></div>'); //add input box
-        }
-		else
-		{
-		alert('You Reached the limits')
-		}
-    });
-});
-
 function numberOnly(input, obj)
 {
 	var ev = input || window.event;
