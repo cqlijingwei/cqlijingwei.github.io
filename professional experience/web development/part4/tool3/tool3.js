@@ -66,8 +66,6 @@ function getGPA()
 	var cWeight=0.00;
 	var curGPA = document.getElementById("currentVal").value;
 	var curWeight = document.getElementById("currentWei").value;
-	var textBoxes1 = document.getElementsById("courseGP");
-	var textBoxes2 = document.getElementsById("courseWei");
 	var GPA=0.00;
 
 	if (curGPA != "" && curWeight != "") {
@@ -76,6 +74,8 @@ function getGPA()
 	}
 
 	if (numOfCourse != "") {
+		var textBoxes1 = document.getElementsById("courseGP");
+		var textBoxes2 = document.getElementsById("courseWei");
 		for (var i=0; i<textBoxes1.length; i++) {
 			for (var j=0; j<textBoxes2.length; j++) {
 				if (textBoxes1[i].getAttribute("name")==textBoxes2[j].getAttribute("name")) {
