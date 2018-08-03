@@ -25,15 +25,14 @@ function getGPA()
 	var curGPA = document.getElementById("currentVal").value;
 	var curWeight = document.getElementById("currentWei").value;
 	var GPA=0.00;
-	var numOfCourse = document.getElementsById("courseGP").length;
+	var textBoxes1 = document.getElementsById("courseGP");
 
 	if (curGPA != "" && curWeight != "") {
 		cGP += curGPA * curWeight;
 		cWeight += curWeight;
 	}
 
-	if (numOfCourse != 0) {
-		var textBoxes1 = document.getElementsById("courseGP");
+	if (textBoxes1 != null) {
 		var textBoxes2 = document.getElementsById("courseWei");
 		for (var i=0; i<textBoxes1.length; i++) {
 			for (var j=0; j<textBoxes2.length; j++) {
