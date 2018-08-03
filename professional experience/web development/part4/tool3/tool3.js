@@ -5,7 +5,7 @@ window.onload = function() {
 }
 
 if ( numOfCourse > 0 ) {
-	addCourses;
+	addCourses();
 }
 
 function numberOnly(input, obj)
