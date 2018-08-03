@@ -25,22 +25,20 @@ function getGPA()
 	var curGPA = document.getElementById("currentVal").value;
 	var curWeight = document.getElementById("currentWei").value;
 	var GPA=0.00;
-	var textBoxes1 = document.getElementsById("courseGP");
 
 	if (curGPA != "" && curWeight != "") {
 		cGP += curGPA * curWeight;
 		cWeight += curWeight;
 	}
 
-	if (textBoxes1 != null) {
-		var textBoxes2 = document.getElementsById("courseWei");
-		for (var i=0; i<textBoxes1.length; i++) {
-			for (var j=0; j<textBoxes2.length; j++) {
-				if (textBoxes1[i].getAttribute("name")==textBoxes2[j].getAttribute("name")) {
-					if (textBoxes1[i].value != "" && textBoxes2[j].value != "") {
-						cGP += textBoxes1[i].value * textBoxes2[j].value;
-						cWeight += textBoxes2[j].value;
-					}
+	var textBoxes1 = document.getElementsById("courseGP");
+	var textBoxes2 = document.getElementsById("courseWei");
+	for (var i=0; i<textBoxes1.length; i++) {
+		for (var j=0; j<textBoxes2.length; j++) {
+			if (textBoxes1[i].getAttribute("name")==textBoxes2[j].getAttribute("name")) {
+				if (textBoxes1[i].value != "" && textBoxes2[j].value != "") {
+					cGP += textBoxes1[i].value * textBoxes2[j].value;
+					cWeight += textBoxes2[j].value;
 				}
 			}
 		}
