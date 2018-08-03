@@ -18,8 +18,7 @@
 
   <div class="container1" style="text-align: center;">
     <button class="add_form_field">Add New Course &nbsp; <span style="font-size:16px; font-weight:bold;">+ </span></button>
-	<div><p>Course 1 Grade Point:<input type="text" id="courseGP" name="1" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"> Weight/Credit:<input type="text" id="courseWei" name="1" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"></p></div>
-	<div><p>Course 2 Grade Point:<input type="text" id="courseGP" name="2" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"> Weight/Credit:<input type="text" id="courseWei" name="2" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"></p></div>
+    <p>Number of Course: <span id="numCourse" value=""></span></p>
   </div>
 
   <div class="ErrorMessage">
@@ -38,18 +37,19 @@
 	    var wrapper         = $(".container1"); 
 	    var add_button      = $(".add_form_field"); 
 	    
-	    var x = 1; 
+	    var x = 0; 
 	    $(add_button).click(function(e){ 
 	        e.preventDefault();
 	        if(x < max_fields){ 
 	            x++; 
-	            $(wrapper).append('<div><p>Course '+x+' Grade Point:<input type="text" id="courseGP" name="x" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"> Weight/Credit:<input type="text" id="courseWei" name="x" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"></p></div>'); //add input box
+	            $(wrapper).append('<div><p>Course '+x+' Grade Point:<input type="text" id="h'+x+'" name="point" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"> Weight/Credit:<input type="text" id="h'+x+'" name="weight" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"></p></div>'); //add input box
 	        }
 			else
 			{
 			alert('You Reached the limits')
 			}
 	    });
+	    $("span:second").replaceWith('<span id="numCourse" value="'x'">'x'</span>');
 	});
   </script>
 </body>
