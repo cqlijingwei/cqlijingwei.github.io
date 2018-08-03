@@ -45,7 +45,6 @@ function getGPA()
 				}
 			}
 		}
-		document.getElementById("numCourse").innerHTML = textBoxes1.length;
 	}
 
 	GPA = (cGP/cWeight).toFixed(2);
