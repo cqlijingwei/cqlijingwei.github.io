@@ -10,5 +10,22 @@
 
 <body>
   <h3 style="text-align: center;">GPA Calculator</h3>
+  <p style="text-align: center;">Due to various grading schemes of universities, we can only calculate GPA given Grade Point rather than Grade. For example, if your grade is 95 out of 100, please give the corresponding grade point of this grade. For University of Toronto, it is 4.0. For Dalhousie University, it is 4.3. Please check your university grading scheme first. Sorry for the inconvenience.</p>
+
+  <div class="optionalContent" id="curGPA" style="text-align: center;">
+  	<p>Current GPA(Optional):<input id="currentVal" type="text" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"> Weight/Credit:<input id="currentWei" type="text" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"></p>
+  </div>
+
+  <div class="numberOfCourse" id="numCourse" style="text-align: center;">
+  	<p>Number of Course to be Calculated(Maximum. 40):<input id="courseNum" type="text" onkeypress="numberOnly(event, this)" onkeyup="addCourses()" onfocus="this.select();"></p>
+  </div>
+
+  <div id="container"><span id="Error"></span></div>
+
+  <div id="result" style="text-align: center;">
+  	<p>cGPA calculated:<span id="cGPA"></span></p>
+  </div>
+
+  <script src="https://cqlijingwei.github.io/professional%20experience/web%20development/part4/tool3/tool3.js" type="text/javascript"></script>
 </body>
 </html>
