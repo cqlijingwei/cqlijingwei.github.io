@@ -37,8 +37,8 @@ function getGPA()
 		var textBoxes2 = document.getElementsByName("weight");
 		for (var i=0; i<textBoxes1.length; i++) {
 			for (var j=0; j<textBoxes2.length; j++) {
-				if (textBoxes1[i].getAttribute("id")==textBoxes2[j].getAttribute("id")) {
-					if (textBoxes1[i].value != "" && textBoxes2[j].value != "") {
+				if (textBoxes1[i].value != "" && textBoxes2[j].value != "") {
+					if (textBoxes1[i].getAttribute("id")==textBoxes2[j].getAttribute("id")) {
 						cGP += textBoxes1[i].value * textBoxes2[j].value;
 						cWeight += textBoxes2[j].value;
 					}
