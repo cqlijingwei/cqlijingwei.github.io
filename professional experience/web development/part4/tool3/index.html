@@ -46,7 +46,7 @@
 	            x++; 
 	            $(wrapper).append('<div><p>Course '+x+' Grade Point:<input type="text" id="h'+x+'" name="point" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"> Weight/Credit:<input type="text" id="h'+x+'" name="weight" onkeypress="numberOnly(event, this)" onkeyup="getGPA()" onfocus="this.select();"></p></div>'); //add input box
 
-				$(update).replaceWith('<span id="numCourse" value="'+x+'">'+x+'</span>');
+				$(update).replaceWith('<span id="numCourse" value="'+x+'"></span>');
 	        }
 			else
 			{
