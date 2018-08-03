@@ -36,6 +36,7 @@
 	    var max_fields      = 40;
 	    var wrapper         = $(".container1"); 
 	    var add_button      = $(".add_form_field"); 
+	    var update = $("#numCourse");
 	    
 	    var x = 0; 
 	    $(add_button).click(function(e){ 
@@ -49,7 +50,7 @@
 			alert('You Reached the limits')
 			}
 	    });
-	    $("span:second").replaceWith('<span id="numCourse" value="'+x+'">'+x+'</span>');
+	    $(update).replaceWith('<span id="numCourse" value="'+x+'">'+x+'</span>');
 	});
   </script>
 </body>
