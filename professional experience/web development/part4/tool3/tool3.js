@@ -28,8 +28,8 @@ function getGPA()
 	var numOfCourse = document.getElementById("numCourse").value;
 
 	if (curGPA != "" && curWeight != "") {
-		cGP += curGPA * curWeight;
-		cWeight += curWeight;
+		cGP += parseFloat(curGPA) * parseFloat(curWeight);
+		cWeight += parseFloat(curWeight);
 	}
 
 	if (numOfCourse!="") {
@@ -39,8 +39,8 @@ function getGPA()
 			for (var j=0; j<textBoxes2.length; j++) {
 				if (textBoxes1[i].value != "" && textBoxes2[j].value != "") {
 					if (textBoxes1[i].getAttribute("id")==textBoxes2[j].getAttribute("id")) {
-						cGP += textBoxes1[i].value * textBoxes2[j].value;
-						cWeight += textBoxes2[j].value;
+						cGP += parseFloat(textBoxes1[i].value) * parseFloat(textBoxes2[j].value);
+						cWeight += parseFloat(textBoxes2[j].value);
 					}
 				}
 			}
@@ -48,5 +48,6 @@ function getGPA()
 	}
 
 	GPA = (cGP/cWeight).toFixed(2);
+	document.getElementById("credits").innerHTML = cWeight;
 	document.getElementById("cGPA").innerHTML = GPA;
 }
