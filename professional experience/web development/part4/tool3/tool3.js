@@ -39,18 +39,18 @@ function addCourses() {
 		input1.type = "text";
 		input1.name = i;
 		input1.id = "courseGP";
-		input1.onkeypress=function(){numberOnly(event, this)};
-		input1.onkeyup=function(){getGPA()};
-		input1.onfocus=function(){this.select()};
+		input1.onkeypress=function(){numberOnly(event, this);}
+		input1.onkeyup=function(){getGPA();}
+		input1.onfocus=function(){this.select();}
 		container.appendChild(input1);
 		container.appendChild(document.createTextNode("Weight/Credit"));
 		var input2 = document.createElement("input");
 		input2.type = "text";
 		input2.name = i;
 		input2.id = "courseWei";
-		input2.onkeypress=function(){numberOnly(event, this)};
-		input2.onkeyup=function(){getGPA()};
-		input2.onfocus=function(){this.select()};
+		input2.onkeypress=function(){numberOnly(event, this);}
+		input2.onkeyup=function(){getGPA();}
+		input2.onfocus=function(){this.select();}
 		container.appendChild(input2);
 		container.appendChild(document.createElement("br"));
 	}
