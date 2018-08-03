@@ -4,6 +4,10 @@ window.onload = function() {
 	getGPA();
 }
 
+if ( numOfCourse > 0 ) {
+	addCourses;
+}
+
 function numberOnly(input, obj)
 {
 	var ev = input || window.event;
