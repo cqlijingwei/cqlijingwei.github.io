@@ -19,6 +19,11 @@ a {
   text-decoration: none;
 }
 
+li a {
+  color: blue;
+  text-decoration: none;
+}
+
 .page-title {
   text-align: center;
 }
