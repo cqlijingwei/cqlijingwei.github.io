@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Scene 2: Number of Adults per Occupation per Income</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+    <script type="text/javascript" src="./lib/d3.js"></script>
+</head>
+
+<body>
+
+<div class="divTable blueTable">
+<div class="divTableBody">
+
+<div class="divTableRow">
+<div class="divTableCell">
+
+<div>
+    <button onclick="window.location.href='1.html'">
+        Scene 1
+    </button>|
+    <button onclick="window.location.href='2.html'">
+        Scene 2
+    </button>|
+    <button onclick="window.location.href='3.html'">
+        Scene 3
+    </button>|
+    <button onclick="window.location.href='4.html'">
+        Scene 4
+    </button>
+	
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="divTableRow">
+<div class="divTableCell">
+
+<p style="margin-left: .25in; text-align: center; text-indent: .5in;"><strong><span style="font-size: 14.0pt; line-height: 107%;">About the Visualization</span></strong></p>
+<p style="margin-left: .25in; text-indent: .5in;"><strong>&nbsp;</strong></p>
+<p style="margin-left: .25in; text-indent: .5in;"><strong>1-The Question</strong>:</p>
+<p style="margin-left: .75in;">What are the factors affecting an adult income the most?</p>
+<p>&nbsp;</p>
+<p style="margin-left: .25in; text-indent: .5in;"><strong>2-The data:</strong></p>
+<p style="margin-left: .75in;">The data set from <a href="https://www.census.gov/en.html">1994 Census bureau database</a>, it is known as &ldquo;Census Adult Income&rdquo;, or simply &ldquo;Adult&rdquo; data set. It can be found at&nbsp;<a href="https://archive.ics.uci.edu/ml/datasets/Adult">UCI Machine Learning Repository</a>. The data is a result of a survey of more than 30K adult in USA. It measures if the adult income exceeds $50,000, and how it is influenced by other the adult features like age, sex, occupation, etc.</p>
+<p>&nbsp;</p>
+<p style="margin-left: .25in; text-indent: .5in;"><strong>3-The narrative visualization:</strong></p>
+<p style="margin-left: .75in;">We will use a narrative visualization structure to answer the mentioned question. The &ldquo;interactive slideshow&rdquo; hybrid narrative structure is used. The structure is demonstrated using 4 scenes that are trying to answer the question by telling a story. As the &ldquo;interactive slideshow&rdquo; structure suggests, the visualization guides the user through the slides, with an order that best conveys the message, but still, it gives the user the flexibility to drill down and investigate further in each slide. For instance, the annotations are cleared after 25 seconds so the user gets the chance to look at the visualization and investigate further without distraction. Once the user finishes the investigation, he can use the navigation button to proceed to the next scene. Once the button is clicked, it triggers an action that opens a new page to render the next scene, and changes the parameters that trigger different data and annotations relevant to the scene.</p>
+<p>&nbsp;</p>
+<p style="margin-left: .25in; text-indent: .5in;"><strong>4-The Scenes:</strong></p>
+<p style="margin-left: .75in;">Regarding the scene layout, it is following the &ldquo;Slide Show&rdquo; narrative layout genre. It is a &ldquo;Slide Show&rdquo; genera because of the multiple slides with navigation buttons, so you can navigate backward and forwards by advancing slides. Regarding the structure, A scene template is used for visual consistency, so each scene has one chart and a brief description text that summarize the message that the chart is trying to convey. Also, the transition is used to keep the user oriented as much as possible. Regarding the ordering, since it is a slideshow, it follows a linear ordering. Finally, the messaging is utilized using annotations and text in order to communicate the message to the user.&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin-left: .25in; text-indent: .5in;"><strong>5-The Annotations:</strong></p>
+<p style="margin-left: .75in;">The annotations are used as one of the messaging techniques to highlight and emphasize some of the interesting aspects of the visualization. For example, in scene 4, the annotation is used to point to the area where all post graduate studies involved a higher percentage of the &gt;50K income group than the &lt;=50K. Regarding the template, all the annotations follow one template to support visual consistency, it consists of a text, linked with a line(s) to a circle(s), which points to the area of interest. Since each scene has a different chart, the annotations are cleared between scenes for convenience. Also, to support the &ldquo;interactive slideshow&rdquo; narrative structure, the annotations are cleared after 25 seconds to give the user the chance to look at the visualization and investigate further without distraction.</p>
+<p>&nbsp;</p>
+<p style="margin-left: .25in; text-indent: .5in;"><strong>6-The parameters:</strong></p>
+<p style="margin-left: .75in;">Scene numbers are the main parameters that control the narrative visualization. As a response to the user action of advancing to the next scene, the button triggers an action based on the scene number to render the corresponding scene's chart, data, annotations and messaging. Hence, it controls the state machine of the narrative visualization.</p>
+<p>&nbsp;</p>
+<p style="margin-left: .25in; text-indent: .5in;"><strong>7-The triggers: </strong></p>
+<p style="margin-left: .75in;">The main trigger is the user event of a &rdquo;button click&rdquo;, which triggers the scene number parameter, which controls the state machine of the narrative visualization. Another trigger is the user event of placing the mouse on an element, which triggers the tooltip. Those available use events are communicated in the welcome page of the visualization in order to make sure the user is aware of the available triggers.</p>
+<p>&nbsp;</p>
+<p style="margin-left: .25in; text-indent: .5in;"><strong>8-The story:</strong></p>
+<p style="margin-left: .75in;"><strong><em>Scene 1</em></strong>: The narrative visualization starts with an overview of the entire data using a scatterplot chart with two dimensions that can best spread out the data, which are "Age" and "Weekly working hours". The adult income, that can be either above 50 thousand dollars (&gt;50K) or below or equal to 50 thousand dollars (&lt;=50K), was highlighted using a discrete color palette. We can notice that the area with the highest income is in the middle close to the average worker adult age (40 years) and average working hours (40). This means that other factors might have a larger effect. So further investigation is needed.</p>
+<p style="margin-left: .75in;"><strong><em>Scene 2</em></strong>: Here we are looking on how Occupation affects the income. We plotted the Number of Adults for vs. each occupation segregated by the income. &nbsp;We can see that Executive managers and specialized professionals have the higher wages among all other occupations. But still there is a higher percentage of those two groups taking wages less than 50K, which means that there might be other stronger factors that we might need to look at.</p>
+<p style="margin-left: .75in;"><strong><em>Scene 3</em></strong>: In this scene, we are looking at the Marital Status factor. Similar to scene 2, we plotted the Number of Adults vs. the Marital Status segregated by the income. &nbsp;We can see that even though the Married people, in general, have a higher percentage of the &gt;50K than any other Marital Status, but still the majority of married people has income less than 50K, which means that the Marital Status probably not the most effective factor.</p>
+<p style="margin-left: .75in;"><strong><em>Scene 4</em></strong>: Now if we look at the education level, "doctorate" for example, we find that education level has a high effect on adult income because the number of &gt;50K group is higher than the &lt;=50K/. the same for other postgraduate education categories, Graduate School, and Masters, which clearly proves that education level is affecting adult income.</p>
+<p>&nbsp;</p>
+<p style="margin-left: .25in; text-indent: .5in;"><strong>9-The message that the story trying to convey: </strong></p>
+<p style="margin-left: .75in;">In my opinion, the strongest factor affecting adult income is Education. What about yours?!</p>
+<p style="margin-left: .75in;">&nbsp;</p>
+<p style="margin-left: .25in; text-indent: .5in;"><strong>10-Essay to rubric questions mapping:</strong></p>
+<p>&nbsp;</p>
+<p style="margin-left: .75in;">1-Does the narrative visualization correctly follow the hybrid structure as stated by the essay?</p>
+<p style="margin-left: .75in;">Addressed in section <strong>3 the narrative visualization</strong></p>
+<p style="margin-left: .75in;">&nbsp;</p>
+<p style="margin-left: .75in;">2-Does the narrative visualization effectively utilize scenes?</p>
+<p style="margin-left: .75in;">Addressed in section <strong>4 the Scenes</strong></p>
+<p style="margin-left: .75in;">&nbsp;</p>
+<p style="margin-left: .75in;">3-Does the narrative visualization effectively utilize annotations?</p>
+<p style="margin-left: .75in;">Addressed in section <strong>5 The Annotations</strong></p>
+<p style="margin-left: .75in;">&nbsp;</p>
+<p style="margin-left: .75in;">4-Does the narrative visualization effectively utilize parameters?</p>
+<p style="margin-left: .75in;">Addressed in section <strong>6 The parameters</strong></p>
+<p style="margin-left: .75in;">&nbsp;</p>
+<p style="margin-left: .75in;">5-Does the narrative visualization effectively utilize triggers?</p>
+<p style="margin-left: .75in;">Addressed in section <strong>7 The triggers</strong></p>
+<p style="margin-left: 1.0in;">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</div></div>
+
+
+
+</div>
+
+
+</body>
+
+</html>

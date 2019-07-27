@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Scene 3: Number of Adults per Marital Status per Income</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+    <script type="text/javascript" src="./lib/d3.js"></script>
+</head>
+
+<body>
+
+
+<div class="divTable blueTable">
+<div class="divTableBody">
+
+<div class="divTableRow">
+<div class="divTableCell">
+
+<div>
+	<button onclick="window.location.href='2.html'">
+        < Previous
+    </button>
+	
+    <button onclick="window.location.href='1.html'" >
+         1 
+    </button>|
+    <button  onclick="window.location.href='2.html'" >
+         2
+    </button>|
+    <button style="background-color: #BFC1C1; cursor: default;" data-toggle="tooltip" data-placement="top" title="Current Scene">
+         3
+    </button>|
+    <button onclick="window.location.href='4.html'">
+         4
+    </button>| 
+	
+	<button onclick="window.location.href='4.html'">
+        Next >
+    </button>
+	
+	<button style="float: right;" onclick="window.open('about.html')" target="_blank">
+        About The Visualization
+    </button>
+</div>
+
+
+</div>
+
+</div>
+<div class="divTableRow">
+<div class="divTableCell">
+<p><span style="font-family: calibri, sans-serif;font-size: 11.5pt;">
+Let us look at the Marital Status. We can see that even though the Married people, in general, have a higher percentage of the >50K than any other Marital Status, but still the majority of married people has income less than 50K, which means that the Marital Status probably not the most effective factor.
+</span></p>
+</div></div>
+
+<div class="divTableRow">
+<div class="divTableCell">
+<svg id="svg"></svg>
+</div></div>
+
+
+</div>
+
+
+
+
+<script type="text/javascript">
+
+	d3.csv("3rdchartdata.csv", function(error, csv){ // <-D
+            render(csv);;
+        }); 
+		
+	function render(data) {
+		
+		var height = 600, 
+			width = 1200, 
+			_margins = {top: 60, left: 170, right: 60, bottom: 60}
+			XaxisWidth = width - 2 * _margins.left;
+			YaxisWidth = height - 2 * _margins.top;
+			
+		var _data= data;
+		
+		
+			
+		
+		
+			
+		var svg = d3.select("#svg")
+				.attr("class", "axis")
+				.attr("width", width)
+				.attr("height", height);
+				
+		 // Chart label 
+		svg.append("text")             
+		  .attr("x", width/2 )
+		  .attr("y",  _margins.top/2 )
+		  .style("text-anchor", "middle")
+		  .style("font-weight", "bold ")
+		  
+		  .text("Number of Adults per Marital Status per Income");
+			
+		//X axis		
+		var scaleX = d3.scaleLinear()
+				.domain([0, 10000]).range([0, XaxisWidth]);
+				
+		var axisX = d3.axisBottom()
+				.scale(scaleX)
+				.ticks(10)
+				.tickSize(12) // <-A
+				.tickPadding(10); // <-C
+
+		svg.append("g")        
+			.attr("transform", function(){
+				return "translate(" + _margins.left +
+						"," +  (height -_margins.bottom ) + ")";
+			})
+			.call(axisX);
+			
+		
+		 // text label for the x axis
+	  svg.append("text")             
+		  .attr("x", width/2 )
+		  .attr("y",  height )
+		  .style("text-anchor", "middle")
+		  .text("Number of Adults");
+		  
+		//Y axis
+		var scaleY = d3.scaleBand()
+				.domain( _data.map(function(d) { return d.category; })).range([0, YaxisWidth]).padding(0.4);;
+		
+		var axisY = d3.axisLeft()
+				.scale(scaleY); // <-C
+
+		svg.append("g")        
+			.attr("transform", function(){
+				return "translate(" + _margins.left +
+						"," + _margins.top + ")";
+			})
+			.call(axisY);
+			
+		//text lable for Y axis
+
+			
+			svg.append("text")      
+		  .style("text-anchor", "middle")
+		  .attr("transform", "translate("+ 20 +","+(height/2)+")rotate(-90)")
+		  .text("Marital Status per Income");
+			
+		//body and bars
+		
+		 _bodyG = svg.append("g")
+						.attr("class", "body")
+						.attr("transform", "translate(" 
+								+ _margins.left
+								+ "," 
+								+ _margins.top + ")")
+								
+		// append the rectangles for the bar chart
+		
+		//tooltip div
+			var tooltip = d3.select("body").append("div").attr("class", "toolTip");
+			
+	
+		var bars = _bodyG.selectAll("rect")
+					.data(_data);
+					
+			bars.enter()
+					.append("rect") // <-B
+				.merge(bars)
+					.attr("class", 
+					function(d) {
+					var	barclass="bar0"			
+					if(d.income == ">50K")
+					barclass="bar1";
+					return barclass
+					
+					; })
+			.attr("y", function(d) { return scaleY(d.category); })
+			.attr("x", 1)
+			.attr("height", scaleY.bandwidth())
+			.on("mousemove", function(d){
+				tooltip.style("opacity", .8)
+				  .style("left", d3.event.pageX - 50 + "px")
+				  .style("top", d3.event.pageY - 45 + "px")
+				  .style("display", "inline-block")
+				  .html("Group: "+d.category+" <br>" + "Number of Adults: "+ d.count);
+				})
+    		.on("mouseout", function(d){ tooltip.style("display", "none");})
+			
+			.transition().duration(1500).ease(d3.easeExp)	
+			
+			.attr("height", scaleY.bandwidth())
+			.attr("width", function(d) { return scaleX(d.count); })	 
+			;
+			
+			
+			
+			
+			
+		//legend
+		 svg.append("circle") // <-B         
+		 .attr("cx", width - 3 * _margins.right)         
+		 .attr("cy",2*_margins.top)         
+		 .attr("r", 10)
+		.attr("class", "col1");	 
+		
+		svg.append("text")             
+		  .attr("x", width - 3 * _margins.right + 35 )
+		  .attr("y",  2*_margins.top +5)
+		  .style("text-anchor", "middle")
+		  .text(">50K");
+		 
+		
+		svg.append("circle") // <-B         
+		 .attr("cx",  width - 3 * _margins.right)         
+		 .attr("cy",2* _margins.top+ 22)         
+		 .attr("r", 10)
+		.attr("class", "col0");	
+		
+		svg.append("text")             
+		  .attr("x", width - 3 * _margins.right + 35 )
+		  .attr("y",  2*_margins.top +28)
+		  .style("text-anchor", "middle")
+		  .text("<=50K");
+		  
+	 svg.append("text")             
+      .attr("x", width - 3 * _margins.right)
+      .attr("y",  2*_margins.top -15)
+      .style("text-anchor", "left")
+      .text("Income");
+	 
+		//annotations
+		
+		_annotG = svg.append("g")
+						.attr("class", "body")
+						.attr("transform", "translate(" 
+								+ _margins.left
+								+ "," 
+								+ _margins.top + ")")
+								
+		
+		//circle annotations 						
+		_annotG.append("circle")
+		
+		.attr("cx", width)         
+		 .attr("cy",0)         
+		 .attr("r", 0)
+		 
+		.transition().duration(4000).ease(d3.easeExp)
+		
+		 .attr("cx", scaleX(6399))         
+		 .attr("cy",scaleY("Married-civ-spouse >50K"))         
+		 .attr("r", 30)
+		 .attr("stroke", "#C0089B")
+		.attr("stroke-width", 2)
+		.attr("fill", "none")
+		.attr("stroke-opacity", "0.5")
+		
+		.transition().duration(20000).ease(d3.easeExp)
+		.transition().duration(2000).ease(d3.easeExp)
+		.attr("cx", width)         
+		 .attr("cy",0)         
+		 .attr("r", 0)
+		
+		//line annotations
+		_annotG.append("line")
+		
+		.attr("x1", width)         
+		 .attr("y1",0)         
+		 .attr("x2", width)         
+		 .attr("y2",0)  
+		 .attr("stroke", "#C0089B")
+		.attr("stroke-width", 2)
+		.attr("stroke-opacity", "0.5")
+		
+		.transition().duration(6000).ease(d3.easeExp)
+		
+		 .attr("x1", scaleX(6399))         
+		 .attr("y1",scaleY("Married-civ-spouse >50K")-30)         
+		 .attr("x2", scaleX(6399))         
+		 .attr("y2",scaleY("Married-civ-spouse >50K")-100)  
+		 .attr("stroke", "#C0089B")
+		.attr("stroke-width", 2)
+		.attr("stroke-opacity", "0.6")
+		
+		.transition().duration(18000).ease(d3.easeExp)
+		.transition().duration(2000).ease(d3.easeExp)
+		.attr("x1", width)         
+		 .attr("y1",0)         
+		 .attr("x2", width)         
+		 .attr("y2",0) 
+		;
+		
+		_annotG.append("text")
+		
+		.attr("font-size", 0 )
+		.attr("x", width )
+		  .attr("y",  0)
+		.transition().duration(6000).ease(d3.easeExp)
+		.attr("font-size", 12 )
+		  .attr("x", scaleX(6399) )
+		  .attr("y",  scaleY("Married-civ-spouse >50K")-100)
+		  .style("text-anchor", "middle")
+		  .text("Still the >50K percentage is lower than <=50K")
+		  .transition().duration(18000).ease(d3.easeExp)
+		.transition().duration(2000).ease(d3.easeExp)
+		.attr("font-size", 0 )
+		.attr("x", width )
+		  .attr("y",  0);
+		  
+				
+		  
+	 }
+</script>
+
+</body>
+
+</html>

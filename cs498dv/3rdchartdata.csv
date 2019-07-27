@@ -1,0 +1,15 @@
+﻿Marital.Status,category,income,count
+Divorced,Divorced >50K,>50K,452
+Divorced,Divorced <=50K,<=50K,3762
+Married-AF-spouse,Married-AF-spouse >50K,>50K,10
+Married-AF-spouse,Married-AF-spouse <=50K,<=50K,11
+Married-civ-spouse,Married-civ-spouse >50K,>50K,6399
+Married-civ-spouse,Married-civ-spouse <=50K,<=50K,7666
+Married-spouse-absent,Married-spouse-absent >50K,>50K,31
+Married-spouse-absent,Married-spouse-absent <=50K,<=50K,339
+Never-married,Never-married >50K,>50K,470
+Never-married,Never-married <=50K,<=50K,9256
+Separated,Separated >50K,>50K,66
+Separated,Separated <=50K,<=50K,873
+Widowed,Widowed >50K,>50K,80
+Widowed,Widowed <=50K,<=50K,747

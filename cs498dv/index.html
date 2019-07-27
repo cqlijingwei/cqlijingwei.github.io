@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Scene 1: Age vs. Hours Per Week</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+    <script type="text/javascript" src="./lib/d3.js"></script>
+</head>
+
+<body onload="setTimeout(openModal, 1500)" >
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>
+	
+<p><span style="font-family: 'Arial Black',sans-serif;">To get the best out of this visualization:</span></p>
+<p style="margin-left: .5in;"><span style="font-family: 'Arial Black',sans-serif;">&gt;Use the navigation buttons on the top left to navigate through the Scenes</span></p>
+<p style="margin-left: .5in;"><span style="font-family: 'Arial Black',sans-serif;">&gt;Read the summary text to better get the message from the current Scene</span></p>
+<p style="margin-left: .5in;"><span style="font-family: 'Arial Black',sans-serif;">&gt;Check the visualization parts highlighted by the annotation</span></p>
+<p style="margin-left: .5in;"><span style="font-family: 'Arial Black',sans-serif;">&gt;Use the mouse hover to trigger the tooltip to further investigate the data if you wish</span></p>
+
+	</p>
+  </div>
+
+</div>
+
+
+<div class="divTable blueTable">
+<div class="divTableBody">
+
+<div class="divTableRow">
+<div class="divTableCell">
+
+<div>
+
+	<button style="cursor: not-allowed;" data-toggle="tooltip" data-placement="top" title="This is the First Scene" >
+        < Previous
+    </button>
+	
+    <button style="background-color: #BFC1C1; cursor: default;" data-toggle="tooltip" data-placement="top" title="Current Scene">
+         1 
+    </button>|
+    <button onclick="window.location.href='2.html'">
+         2
+    </button>|
+    <button onclick="window.location.href='3.html'">
+         3
+    </button>|
+    <button onclick="window.location.href='4.html'">
+         4
+    </button>| 
+	
+	<button onclick="window.location.href='2.html'">
+        Next >
+    </button>
+
+	
+	<button style="float: right;" onclick="window.open('about.html')" target="_blank">
+        About The Visualization
+    </button>
+</div>
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="divTableRow">
+<div class="divTableCell">
+
+<p><span style="font-family: calibri, sans-serif;font-size: 11.5pt;">
+We are trying to identify the factor(s) affecting an adult income the most. We can notice that the area with the highest income is in the middle close to the average worker adult age (40 years) and average working hours (40). This means that other factors might have a larger effect. Let us investigate further ...
+</span></p>
+</div></div>
+
+<div class="divTableRow">
+<div class="divTableCell">
+<svg id="svg"></svg>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<script type="text/javascript">
+
+
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+
+function openModal(){
+
+modal.style.display = "block";
+
+//Get the modal
+
+
+}
+
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+	initVis();
+}
+
+
+function initVis(){
+	d3.csv("adult_all.csv", function(error, csv){ // <-D
+            render(csv);;
+        }); 
+}
+
+	
+		
+	function render(data) {
+		
+		var height = 600, 
+			width = 1200, 
+			_margins = {top: 60, left: 170, right: 60, bottom: 60}
+			XaxisWidth = width - 2 * _margins.left;
+			YaxisWidth = height - 2 * _margins.top;
+			
+		var _data= data;
+		
+		
+			
+		
+		
+			
+		var svg = d3.select("#svg")
+				.attr("class", "axis")
+				.attr("width", width)
+				.attr("height", height);
+				
+		
+		 // Chart label 
+		svg.append("text")             
+		  .attr("x", width/2 )
+		  .attr("y",  _margins.top/2 )
+		  .style("text-anchor", "middle")
+		  .style("font-weight", "bold ")
+		  
+		  .text("Age vs. Hours Per Week");
+		  
+			
+		//X axis		
+		var scaleX = d3.scaleLinear()
+				.domain([15, 92]).range([0, XaxisWidth]);
+				
+		var axisX = d3.axisBottom()
+				.scale(scaleX)
+				.ticks(10)
+				.tickSize(12) // <-A
+				.tickPadding(10); // <-C
+
+		svg.append("g")        
+			.attr("transform", function(){
+				return "translate(" + _margins.left +
+						"," +  (height -_margins.bottom ) + ")";
+			})
+			.call(axisX);
+			
+		
+		 // text label for the x axis
+	  svg.append("text")             
+		  .attr("x", width/2 )
+		  .attr("y",  height - 10 )
+		  .style("text-anchor", "middle")
+		  .text("Age");
+		  
+		//Y axis
+		var scaleY = d3.scaleLinear()
+				.domain([100, 0]).range([0, YaxisWidth]);
+		
+		var axisY = d3.axisLeft()
+				.scale(scaleY); // <-C
+
+		svg.append("g")        
+			.attr("transform", function(){
+				return "translate(" + _margins.left +
+						"," + _margins.top + ")";
+			})
+			.call(axisY);
+			
+		//text lable for Y axis
+
+			
+			svg.append("text")      
+		  .style("text-anchor", "middle")
+		  .attr("transform", "translate("+ 100 +","+(height/2)+")rotate(-90)")
+		  .text("Hours per Week");
+			
+		//body and dots
+		
+		 _bodyG = svg.append("g")
+						.attr("class", "body")
+						.attr("transform", "translate(" 
+								+ _margins.left
+								+ "," 
+								+ _margins.top + ")")
+								
+		// append the circles for the scatterplot chart
+		//tooltip div
+			var tooltip = d3.select("body").append("div").attr("class", "toolTip");
+		 // add the dots
+		_bodyG.selectAll("dot")
+		.data(_data)
+		.enter().append("circle")
+		.attr("r", 0)
+		.attr("cx", XaxisWidth/2)
+		.attr("cy", YaxisWidth/2)
+		.attr("stroke", function(d) {
+					var	color="#D54737"			
+					if(d.income == ">50K")
+					color="#0B9F00";
+					return color
+					
+					; })
+		.attr("stroke-width", 2)
+		.attr("fill", function(d) {
+					var	color="#D54737"			
+					if(d.income == ">50K")
+					color="#0B9F00";
+					return color
+					
+					; })
+		.attr("fill-opacity", "0")
+		.attr("stroke-opacity", "0.5")
+		
+		.on("mousemove", function(d){
+            tooltip.style("opacity", .8)
+              .style("left", d3.event.pageX - 50 + "px")
+              .style("top", d3.event.pageY - 100 + "px")
+              .style("display", "inline-block")
+              .html(	 "Age: "+d.age
+				+"<br>"+ "Hours per Week: "+ d.hoursperweek 
+				+"<br>"+ "Occupation: "+ d.occupation 
+				+"<br>"+ "Marital Status: "+ d.maritalstatus
+				+"<br>"+ "Education: "+ d.education
+				+"<br>"+ "Income: "+ d.income
+				);
+				})
+    		.on("mouseout", function(d){ tooltip.style("display", "none");})
+			
+			.transition().duration(1500).ease(d3.easeLinear)
+			.attr("r", 3)
+			.attr("cx", function(d) { return scaleX(d.age); })
+			.attr("cy", function(d) { return scaleY(d.hoursperweek); })
+		; 
+		
+
+		//legend
+		 svg.append("circle") // <-B         
+		 .attr("cx", width - 3 * _margins.right)         
+		 .attr("cy",2*_margins.top)         
+		 .attr("r", 10)
+		.attr("class", "col1");	 
+		
+		svg.append("text")             
+		  .attr("x", width - 3 * _margins.right + 35 )
+		  .attr("y",  2*_margins.top +5)
+		  .style("text-anchor", "middle")
+		  .text(">50K");
+		 
+		
+		svg.append("circle") // <-B         
+		 .attr("cx",  width - 3 * _margins.right)         
+		 .attr("cy",2* _margins.top+ 22)         
+		 .attr("r", 10)
+		.attr("class", "col0");	
+		
+		svg.append("text")             
+		  .attr("x", width - 3 * _margins.right + 35 )
+		  .attr("y",  2*_margins.top +28)
+		  .style("text-anchor", "middle")
+		  .text("<=50K");
+		  
+		  svg.append("text")             
+      .attr("x", width - 3 * _margins.right)
+      .attr("y",  2*_margins.top -15)
+      .style("text-anchor", "left")
+      .text("Income");
+	 
+		//annotations
+		
+		_annotG = svg.append("g")
+						.attr("class", "body")
+						.attr("transform", "translate(" 
+								+ _margins.left
+								+ "," 
+								+ _margins.top + ")")
+								
+		
+		//circle annotations 					
+		_annotG.append("circle")
+		
+		.attr("cx", width)         
+		 .attr("cy",0)         
+		 .attr("r", 0)
+		 
+		.transition().duration(7000).ease(d3.easeExp)
+		
+		 .attr("cx", scaleX(40))         
+		 .attr("cy",scaleY(45))         
+		 .attr("r", 100)
+		 .attr("stroke", "#C0089B")
+		.attr("stroke-width", 2)
+		.attr("fill", "none")
+		.attr("stroke-opacity", "0.6")
+		
+		.transition().duration(22000).ease(d3.easeExp)
+		.transition().duration(2000).ease(d3.easeExp)
+		.attr("cx", width)         
+		 .attr("cy",0)         
+		 .attr("r", 0)
+
+		 
+		 //line annotations 
+		_annotG.append("line")
+		
+		.attr("x1", width)         
+		 .attr("y1",0)         
+		 .attr("x2", width)         
+		 .attr("y2",0)  
+		 .attr("stroke", "#C0089B")
+		.attr("stroke-width", 2)
+		.attr("stroke-opacity", "0.6")
+		
+		.transition().duration(9000).ease(d3.easeExp)
+		
+		 .attr("x1", scaleX(47))         
+		 .attr("y1",scaleY(58))         
+		 .attr("x2", scaleX(64))         
+		 .attr("y2",scaleY(84) )  
+		 .attr("stroke", "#C0089B")
+		.attr("s64oke-width", 2)
+		.attr("stroke-op84ity", "0.6")
+		
+		.transition().duration(20000).ease(d3.easeExp)
+		.transition().duration(2000).ease(d3.easeExp)
+		.attr("x1", width)         
+		 .attr("y1",0)         
+		 .attr("x2", width)         
+		 .attr("y2",0) 
+		;
+		
+		_annotG.append("text")
+		
+		.attr("font-size", 0 )
+		.attr("x", width )
+		
+		
+		_annotG.append("text")
+		
+		.attr("font-size", 0 )
+		.attr("x", width )
+		  .attr("y",  0)
+		.transition().duration(9000).ease(d3.easeExp)
+		.attr("font-size", 12 )
+		  .attr("x", scaleX(64) )
+		  .attr("y",  scaleY(84) )
+		  .style("text-anchor", "right")
+		  .style("alignment-baseline", "middle")
+		  .text("Area with the highest income")
+		  .transition().duration(20000).ease(d3.easeExp)
+		.transition().duration(2000).ease(d3.easeExp)
+		.attr("font-size", 0 )
+		.attr("x", width )
+		  .attr("y",  0);
+	 }
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Scene 4: Number of Adults for per Education Level per Income </title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+    <script type="text/javascript" src="./lib/d3.js"></script>
+</head>
+
+<body>
+
+
+<div class="divTable blueTable">
+<div class="divTableBody">
+
+<div class="divTableRow">
+<div class="divTableCell">
+
+<div>
+	<button onclick="window.location.href='3.html'">
+        < Previous
+    </button>
+	
+    <button onclick="window.location.href='1.html'" >
+         1 
+    </button>|
+    <button  onclick="window.location.href='2.html'" >
+         2
+    </button>|
+    <button onclick="window.location.href='3.html'" >
+         3
+    </button>|
+    <button style="background-color: #BFC1C1; cursor: default;" data-toggle="tooltip" data-placement="top" title="Current Scene">
+         4
+    </button>| 
+	
+	<button style="cursor: not-allowed;" data-toggle="tooltip" data-placement="top" title="This is the Last Scene" >
+        Next >
+    </button>
+	
+	<button style="float: right;" onclick="window.open('about.html')" target="_blank">
+        About The Visualization
+    </button>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="divTableRow">
+<div class="divTableCell">
+
+<p><span style="font-family: calibri, sans-serif;font-size: 11.5pt;">Here we are looking at Education Levels. We can notice that postgraduate education groups, Doctorate, Graduate School, and Masters, involved adults numbers of (&gt;50K) category higher than the (&lt;=50K), which clearly proves that education level is strongly affecting adult income.
+</span></p>
+
+</div></div>
+
+<div class="divTableRow">
+<div class="divTableCell">
+<svg id="svg"></svg>
+</div></div>
+
+
+</div>
+<script type="text/javascript">
+ var height = 600, 
+        width = 1200, 
+        _margins = {top: 60, left: 170, right: 60, bottom: 60}
+        XaxisWidth = width - 2 * _margins.left;
+		YaxisWidth = height - 2 * _margins.top;
+		
+	var _data= [{level:"Doctorate >50K", income: ">50K", count: 280},
+				{level:"Doctorate <=50K", income: "<=50K", count: 95},
+				{level:"Grad-Prof-school >50K", income: ">50K", count: 406},
+				{level:"Grad-Prof-school <=50K", income: "<=50K", count: 136},
+				{level:"Masters >50K", income: ">50K", count: 918},
+				{level:"Masters <=50K", income: "<=50K", count: 709},
+				{level:"Bachelors >50K", income: ">50K", count: 2126},
+				{level:"Bachelors <=50K", income: "<=50K", count: 2918},
+				{level:"Assoc-acdm >50K", income: ">50K", count: 256},
+				{level:"Assoc-acdm <=50K", income: "<=50K", count: 752},
+				{level:"Assoc-voc >50K", income: ">50K", count: 344},
+				{level:"Assoc-voc <=50K", income: "<=50K", count: 963},
+				{level:"Some-college >50K", income: ">50K", count: 1336},
+				{level:"Some-college <=50K", income: "<=50K", count: 5342},
+				{level:"HS-grad >50K", income: ">50K", count: 1617},
+				{level:"HS-grad <=50K", income: "<=50K", count: 8223},
+				{level:"12th >50K", income: ">50K", count: 29},
+				{level:"12th <=50K", income: "<=50K", count: 348},
+				{level:"11th >50K", income: ">50K", count: 59},
+				{level:"11th <=50K", income: "<=50K", count: 989},
+				{level:"10th >50K", income: ">50K", count: 59},
+				{level:"10th <=50K", income: "<=50K", count: 761},
+				{level:"9th >50K", income: ">50K", count: 25},
+				{level:"9th <=50K", income: "<=50K", count: 430},
+				{level:"7th-8th >50K", income: ">50K", count: 35},
+				{level:"7th-8th <=50K", income: "<=50K", count: 522},
+				{level:"5th-6th >50K", income: ">50K", count: 12},
+				{level:"5th-6th <=50K", income: "<=50K", count: 276},
+				{level:"1st-4th >50K", income: ">50K", count: 6},
+				{level:"1st-4th <=50K", income: "<=50K", count: 145},
+				{level:"Preschool >50K", income: ">50K", count: 0},
+				{level:"Preschool <=50K", income: "<=50K", count: 45}]
+				
+    var svg = d3.select("#svg")
+				.attr("class", "axis")
+				.attr("width", width)
+				.attr("height", height);
+			
+	 // Chart label 
+		svg.append("text")             
+		  .attr("x", width/2 )
+		  .attr("y",  _margins.top/2 )
+		  .style("text-anchor", "middle")
+		  .style("font-weight", "bold ")
+		  
+		  .text("Number of Adults for per Education Level per Income");
+		
+	//X axis		
+    var scaleX = d3.scaleLinear()
+            .domain([0, 9000]).range([0, XaxisWidth]);
+			
+    var axisX = d3.axisBottom()
+            .scale(scaleX)
+            .ticks(10)
+            .tickSize(12) // <-A
+            .tickPadding(10); // <-C
+
+    svg.append("g")        
+        .attr("transform", function(){
+            return "translate(" + _margins.left +
+                    "," +  (height -_margins.bottom ) + ")";
+        })
+        .call(axisX);
+		
+	
+	 // text label for the x axis
+  svg.append("text")             
+      .attr("x", width/2 )
+      .attr("y",  height )
+      .style("text-anchor", "middle")
+      .text("Number of Adults");
+	  
+    //Y axis
+    var scaleY = d3.scaleBand()
+            .domain( _data.map(function(d) { return d.level; })).range([0, YaxisWidth]).padding(0.3);;
+    
+    var axisY = d3.axisLeft()
+            .scale(scaleY); // <-C
+
+    svg.append("g")        
+        .attr("transform", function(){
+            return "translate(" + _margins.left +
+                    "," + _margins.top + ")";
+        })
+        .call(axisY);
+		
+	//text lable for Y axis
+
+		
+		svg.append("text")      
+      .style("text-anchor", "middle")
+	  .attr("transform", "translate("+ 20 +","+(height/2)+")rotate(-90)")
+      .text("Level of Education per Income");
+		
+	//body and bars
+	
+	 _bodyG = svg.append("g")
+                    .attr("class", "body")
+                    .attr("transform", "translate(" 
+                            + _margins.left
+                            + "," 
+                            + _margins.top + ")")
+							
+	// append the rectangles for the bar chart
+	//tooltip div
+			var tooltip = d3.select("body").append("div").attr("class", "toolTip");
+			
+	var bars = _bodyG.selectAll("rect")
+                .data(_data);
+				
+		bars.enter()
+                .append("rect") // <-B
+            .merge(bars)
+                .attr("class", 
+				function(d) {
+				var	barclass="bar0"			
+				if(d.income == ">50K")
+				barclass="bar1";
+				return barclass
+				
+				; })	
+		
+		.attr("y", function(d) { return scaleY(d.level); })
+			.attr("x", 1)
+			.attr("height", scaleY.bandwidth())
+			.on("mousemove", function(d){
+				tooltip.style("opacity", .8)
+				  .style("left", d3.event.pageX - 50 + "px")
+				  .style("top", d3.event.pageY - 45 + "px")
+				  .style("display", "inline-block")
+				  .html("Group: "+d.level+" <br>" + "Number of Adults: "+ d.count);
+				})
+    		.on("mouseout", function(d){ tooltip.style("display", "none");})
+			
+			.transition().duration(1500).ease(d3.easeExp)	
+			
+			.attr("height", scaleY.bandwidth())
+			.attr("width", function(d) { return scaleX(d.count); })	 
+			;
+		
+		
+	//legend
+	 svg.append("circle") // <-B         
+	 .attr("cx", width - 3 * _margins.right)         
+	 .attr("cy",2*_margins.top)         
+	 .attr("r", 10)
+	.attr("class", "col1");	 
+	
+	svg.append("text")             
+      .attr("x", width - 3 * _margins.right + 35 )
+      .attr("y",  2*_margins.top +5)
+      .style("text-anchor", "middle")
+      .text(">50K");
+	 
+	
+	svg.append("circle") // <-B         
+	 .attr("cx",  width - 3 * _margins.right)         
+	 .attr("cy",2* _margins.top+ 22)         
+	 .attr("r", 10)
+	.attr("class", "col0");	
+	
+	svg.append("text")             
+      .attr("x", width - 3 * _margins.right + 35 )
+      .attr("y",  2*_margins.top +28)
+      .style("text-anchor", "middle")
+      .text("<=50K");
+	  
+	svg.append("text")             
+      .attr("x", width - 3 * _margins.right)
+      .attr("y",  2*_margins.top -15)
+      .style("text-anchor", "left")
+      .text("Income");
+	  
+	  //annotations
+		
+		_annotG = svg.append("g")
+						.attr("class", "body")
+						.attr("transform", "translate(" 
+								+ _margins.left
+								+ "," 
+								+ _margins.top + ")")
+								
+		
+		//circle annotations 1						
+		_annotG.append("circle")
+		
+		.attr("cx", width)         
+		 .attr("cy",0)         
+		 .attr("r", 0)
+		 
+		.transition().duration(4000).ease(d3.easeExp)
+		
+		 .attr("cx", scaleX(650))         
+		 .attr("cy",scaleY("Grad-Prof-school >50K"))         
+		 .attr("r", 50)
+		 .attr("stroke", "#C0089B")
+		.attr("stroke-width", 2)
+		.attr("fill", "none")
+		.attr("stroke-opacity", "0.6")
+		
+		.transition().duration(20000).ease(d3.easeExp)
+		.transition().duration(2000).ease(d3.easeExp)
+		.attr("cx", width)         
+		 .attr("cy",0)         
+		 .attr("r", 0)
+		 
+		 
+		
+		//line annotations 1
+		_annotG.append("line")
+		
+		.attr("x1", width)         
+		 .attr("y1",0)         
+		 .attr("x2", width)         
+		 .attr("y2",0)  
+		 .attr("stroke", "#C0089B")
+		.attr("stroke-width", 2)
+		.attr("stroke-opacity", "0.6")
+		
+		.transition().duration(6000).ease(d3.easeExp)
+		
+		 .attr("x1", scaleX(650)+50)         
+		 .attr("y1",scaleY("Grad-Prof-school >50K"))         
+		 .attr("x2", scaleX(3500))         
+		 .attr("y2",scaleY("Grad-Prof-school >50K"))  
+		 .attr("stroke", "#C0089B")
+		.attr("stroke-width", 2)
+		.attr("stroke-opacity", "0.6")
+		
+		.transition().duration(18000).ease(d3.easeExp)
+		.transition().duration(2000).ease(d3.easeExp)
+		.attr("x1", width)         
+		 .attr("y1",0)         
+		 .attr("x2", width)         
+		 .attr("y2",0) 
+		;
+		
+		
+		
+		_annotG.append("text")
+		
+		.attr("font-size", 0 )
+		.attr("x", width )
+		  .attr("y",  0)
+		.transition().duration(6000).ease(d3.easeExp)
+		.attr("font-size", 12 )
+		  .attr("x", scaleX(3500) )
+		  .attr("y",  scaleY("Grad-Prof-school >50K"))
+		  .style("text-anchor", "right")  
+		  .style("alignment-baseline", "middle")
+		  .text("The only groups have higher number form >50K category than the <=50K")
+		  .transition().duration(18000).ease(d3.easeExp)
+		.transition().duration(2000).ease(d3.easeExp)
+		.attr("font-size", 0 )
+		.attr("x", width )
+		  .attr("y",  0);
+		  
+	 
+</script>
+
+</body>
+
+</html>
