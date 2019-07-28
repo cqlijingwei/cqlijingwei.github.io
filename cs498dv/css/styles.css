@@ -21,6 +21,11 @@ button:hover{
     background-color: darkblue;
 }
 
+button.active{
+    background-color: yellow;
+    color: black;
+}
+
 /* Popup container - can be anything you want */
 .popup {
     position: relative;
