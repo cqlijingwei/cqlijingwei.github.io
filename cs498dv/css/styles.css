@@ -1,23 +1,31 @@
-body {
-    font-family: "helvetica";
+html, body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
 }
 
 button {
-    margin: 0 4px 0 0;
-    background-color: #D0E4F5;
-    border: 1px solid #1599F2;
-    border-top: 1px solid #1599F2;
-    border-left: 1px solid #1599F2;
-
-    font-size: 12px;
-    line-height: 130%;
-    text-decoration: none;
-    font-weight: bold;
-    color: #565656;
+    padding: 80px;
+    text-align: center;
     cursor: pointer;
-	border-radius: 4px;
+    width: 350px;
+    height: 330px;
+    outline: none;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    background-color: blue;
+    border-radius: 0 5px 5px 0;
+    float: left;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
+button:hover{
+    background-color: darkblue;
+}
 
 /* Popup container - can be anything you want */
 .popup {
