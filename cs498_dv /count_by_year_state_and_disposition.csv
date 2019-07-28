@@ -1,0 +1,824 @@
+2007,AL,Closed by arrest,45
+2007,AL,Closed without arrest,12
+2007,AL,Open/No arrest,35
+2007,CA,Closed by arrest,178
+2007,CA,Closed without arrest,12
+2007,CA,Open/No arrest,134
+2007,DC,Closed by arrest,104
+2007,DC,Closed without arrest,11
+2007,DC,Open/No arrest,66
+2007,FL,Closed by arrest,97
+2007,FL,Closed without arrest,24
+2007,FL,Open/No arrest,89
+2007,GA,Closed by arrest,79
+2007,GA,Closed without arrest,17
+2007,GA,Open/No arrest,48
+2007,IL,Closed by arrest,169
+2007,IL,Closed without arrest,61
+2007,IL,Open/No arrest,215
+2007,IN,Closed by arrest,66
+2007,IN,Closed without arrest,10
+2007,IN,Open/No arrest,37
+2007,MA,Closed by arrest,34
+2007,MA,Open/No arrest,32
+2007,MD,Closed by arrest,117
+2007,MD,Closed without arrest,25
+2007,MD,Open/No arrest,138
+2007,MN,Closed by arrest,26
+2007,MN,Closed without arrest,2
+2007,MN,Open/No arrest,13
+2007,MO,Closed by arrest,120
+2007,MO,Closed without arrest,1
+2007,MO,Open/No arrest,106
+2007,NC,Closed by arrest,62
+2007,NC,Closed without arrest,11
+2007,NC,Open/No arrest,25
+2007,NE,Closed by arrest,33
+2007,NE,Open/No arrest,8
+2007,NV,Closed by arrest,75
+2007,NV,Closed without arrest,7
+2007,NV,Open/No arrest,37
+2007,NY,Closed by arrest,30
+2007,NY,Closed without arrest,1
+2007,NY,Open/No arrest,25
+2007,OH,Closed by arrest,84
+2007,OH,Closed without arrest,11
+2007,OH,Open/No arrest,51
+2007,OK,Closed by arrest,87
+2007,OK,Closed without arrest,5
+2007,OK,Open/No arrest,42
+2007,PA,Closed by arrest,260
+2007,PA,Closed without arrest,12
+2007,PA,Open/No arrest,181
+2007,TN,Closed by arrest,157
+2007,TN,Closed without arrest,3
+2007,TN,Open/No arrest,50
+2007,TX,Closed by arrest,378
+2007,TX,Closed without arrest,74
+2007,TX,Open/No arrest,277
+2007,VA,Closed by arrest,47
+2007,VA,Closed without arrest,1
+2007,VA,Open/No arrest,8
+2007,wI,Closed by arrest,72
+2007,wI,Closed without arrest,3
+2007,wI,Open/No arrest,28
+2008,AL,Closed by arrest,47
+2008,AL,Closed without arrest,8
+2008,AL,Open/No arrest,26
+2008,CA,Closed by arrest,220
+2008,CA,Closed without arrest,8
+2008,CA,Open/No arrest,193
+2008,DC,Closed by arrest,110
+2008,DC,Closed without arrest,8
+2008,DC,Open/No arrest,68
+2008,FL,Closed by arrest,87
+2008,FL,Closed without arrest,30
+2008,FL,Open/No arrest,67
+2008,GA,Closed by arrest,85
+2008,GA,Closed without arrest,7
+2008,GA,Open/No arrest,35
+2008,IL,Closed by arrest,190
+2008,IL,Closed without arrest,57
+2008,IL,Open/No arrest,263
+2008,IN,Closed by arrest,78
+2008,IN,Closed without arrest,10
+2008,IN,Open/No arrest,26
+2008,LA,Closed by arrest,1
+2008,LA,Closed without arrest,1
+2008,MA,Closed by arrest,24
+2008,MA,Open/No arrest,42
+2008,MD,Closed by arrest,95
+2008,MD,Closed without arrest,18
+2008,MD,Open/No arrest,121
+2008,MN,Closed by arrest,15
+2008,MN,Closed without arrest,1
+2008,MN,Open/No arrest,19
+2008,MO,Closed by arrest,162
+2008,MO,Closed without arrest,6
+2008,MO,Open/No arrest,118
+2008,NC,Closed by arrest,65
+2008,NC,Closed without arrest,7
+2008,NC,Open/No arrest,35
+2008,NE,Closed by arrest,24
+2008,NE,Open/No arrest,20
+2008,NV,Closed by arrest,76
+2008,NV,Closed without arrest,13
+2008,NV,Open/No arrest,44
+2008,NY,Closed by arrest,15
+2008,NY,Closed without arrest,1
+2008,NY,Open/No arrest,21
+2008,OH,Closed by arrest,90
+2008,OH,Closed without arrest,13
+2008,OH,Open/No arrest,81
+2008,OK,Closed by arrest,63
+2008,OK,Closed without arrest,5
+2008,OK,Open/No arrest,44
+2008,PA,Closed by arrest,247
+2008,PA,Closed without arrest,14
+2008,PA,Open/No arrest,150
+2008,TN,Closed by arrest,157
+2008,TN,Closed without arrest,8
+2008,TN,Open/No arrest,46
+2008,TX,Closed by arrest,354
+2008,TX,Closed without arrest,59
+2008,TX,Open/No arrest,215
+2008,VA,Closed by arrest,27
+2008,VA,Closed without arrest,1
+2008,VA,Open/No arrest,3
+2008,wI,Closed by arrest,52
+2008,wI,Closed without arrest,4
+2008,wI,Open/No arrest,15
+2009,AL,Closed by arrest,39
+2009,AL,Closed without arrest,9
+2009,AL,Open/No arrest,17
+2009,CA,Closed by arrest,176
+2009,CA,Closed without arrest,15
+2009,CA,Open/No arrest,147
+2009,DC,Closed by arrest,81
+2009,DC,Closed without arrest,8
+2009,DC,Open/No arrest,55
+2009,FL,Closed by arrest,84
+2009,FL,Closed without arrest,17
+2009,FL,Open/No arrest,58
+2009,GA,Closed by arrest,59
+2009,GA,Closed without arrest,7
+2009,GA,Open/No arrest,34
+2009,IL,Closed by arrest,155
+2009,IL,Closed without arrest,52
+2009,IL,Open/No arrest,250
+2009,IN,Closed by arrest,65
+2009,IN,Closed without arrest,8
+2009,IN,Open/No arrest,26
+2009,LA,Closed by arrest,1
+2009,LA,Open/No arrest,1
+2009,MA,Closed by arrest,28
+2009,MA,Open/No arrest,21
+2009,MD,Closed by arrest,104
+2009,MD,Closed without arrest,14
+2009,MD,Open/No arrest,118
+2009,MN,Closed by arrest,10
+2009,MN,Open/No arrest,5
+2009,MO,Closed by arrest,153
+2009,MO,Closed without arrest,4
+2009,MO,Open/No arrest,92
+2009,NC,Closed by arrest,55
+2009,NC,Closed without arrest,4
+2009,NC,Open/No arrest,18
+2009,NE,Closed by arrest,17
+2009,NE,Open/No arrest,16
+2009,NV,Closed by arrest,81
+2009,NV,Closed without arrest,9
+2009,NV,Open/No arrest,31
+2009,NY,Closed by arrest,28
+2009,NY,Closed without arrest,2
+2009,NY,Open/No arrest,31
+2009,OH,Closed by arrest,77
+2009,OH,Closed without arrest,16
+2009,OH,Open/No arrest,47
+2009,OK,Closed by arrest,82
+2009,OK,Closed without arrest,4
+2009,OK,Open/No arrest,39
+2009,PA,Closed by arrest,216
+2009,PA,Closed without arrest,12
+2009,PA,Open/No arrest,120
+2009,TN,Closed by arrest,160
+2009,TN,Closed without arrest,12
+2009,TN,Open/No arrest,40
+2009,TX,Closed by arrest,340
+2009,TX,Closed without arrest,63
+2009,TX,Open/No arrest,191
+2009,VA,Closed by arrest,30
+2009,VA,Closed without arrest,2
+2009,VA,Open/No arrest,7
+2009,wI,Closed by arrest,50
+2009,wI,Closed without arrest,1
+2009,wI,Open/No arrest,21
+2010,AL,Closed by arrest,38
+2010,AL,Closed without arrest,3
+2010,AL,Open/No arrest,17
+2010,CA,Closed by arrest,305
+2010,CA,Closed without arrest,18
+2010,CA,Open/No arrest,303
+2010,CO,Closed by arrest,18
+2010,CO,Closed without arrest,6
+2010,CO,Open/No arrest,14
+2010,DC,Closed by arrest,81
+2010,DC,Closed without arrest,6
+2010,DC,Open/No arrest,45
+2010,FL,Closed by arrest,120
+2010,FL,Closed without arrest,11
+2010,FL,Open/No arrest,56
+2010,GA,Closed by arrest,68
+2010,GA,Closed without arrest,3
+2010,GA,Open/No arrest,37
+2010,IL,Closed by arrest,135
+2010,IL,Closed without arrest,44
+2010,IL,Open/No arrest,255
+2010,IN,Closed by arrest,59
+2010,IN,Closed without arrest,5
+2010,IN,Open/No arrest,28
+2010,KY,Closed by arrest,30
+2010,KY,Open/No arrest,22
+2010,LA,Closed by arrest,83
+2010,LA,Closed without arrest,20
+2010,LA,Open/No arrest,83
+2010,MA,Closed by arrest,36
+2010,MA,Open/No arrest,38
+2010,MD,Closed by arrest,93
+2010,MD,Closed without arrest,15
+2010,MD,Open/No arrest,112
+2010,MI,Closed by arrest,107
+2010,MI,Closed without arrest,4
+2010,MI,Open/No arrest,199
+2010,MN,Closed by arrest,14
+2010,MN,Closed without arrest,4
+2010,MN,Open/No arrest,17
+2010,MO,Closed by arrest,135
+2010,MO,Closed without arrest,4
+2010,MO,Open/No arrest,104
+2010,NC,Closed by arrest,61
+2010,NC,Closed without arrest,5
+2010,NC,Open/No arrest,18
+2010,NE,Closed by arrest,14
+2010,NE,Open/No arrest,19
+2010,NM,Closed by arrest,30
+2010,NM,Closed without arrest,10
+2010,NM,Open/No arrest,5
+2010,NV,Closed by arrest,67
+2010,NV,Closed without arrest,18
+2010,NV,Open/No arrest,27
+2010,NY,Closed by arrest,24
+2010,NY,Closed without arrest,1
+2010,NY,Open/No arrest,29
+2010,OH,Closed by arrest,111
+2010,OH,Closed without arrest,6
+2010,OH,Open/No arrest,58
+2010,OK,Closed by arrest,68
+2010,OK,Closed without arrest,5
+2010,OK,Open/No arrest,35
+2010,PA,Closed by arrest,237
+2010,PA,Closed without arrest,6
+2010,PA,Open/No arrest,122
+2010,TN,Closed by arrest,106
+2010,TN,Closed without arrest,10
+2010,TN,Open/No arrest,32
+2010,TX,Closed by arrest,323
+2010,TX,Closed without arrest,64
+2010,TX,Open/No arrest,168
+2010,VA,Closed by arrest,29
+2010,VA,Closed without arrest,3
+2010,VA,Open/No arrest,9
+2010,wI,Closed by arrest,69
+2010,wI,Closed without arrest,3
+2010,wI,Open/No arrest,23
+2011,AL,Closed by arrest,35
+2011,AL,Closed without arrest,4
+2011,AL,Open/No arrest,15
+2011,AZ,Closed by arrest,51
+2011,AZ,Closed without arrest,17
+2011,AZ,Open/No arrest,56
+2011,CA,Closed by arrest,310
+2011,CA,Closed without arrest,16
+2011,CA,Open/No arrest,320
+2011,CO,Closed by arrest,25
+2011,CO,Closed without arrest,6
+2011,CO,Open/No arrest,12
+2011,DC,Closed by arrest,75
+2011,DC,Closed without arrest,3
+2011,DC,Open/No arrest,30
+2011,FL,Closed by arrest,83
+2011,FL,Closed without arrest,11
+2011,FL,Open/No arrest,52
+2011,GA,Closed by arrest,70
+2011,GA,Closed without arrest,7
+2011,GA,Open/No arrest,36
+2011,IL,Closed by arrest,133
+2011,IL,Closed without arrest,29
+2011,IL,Open/No arrest,275
+2011,IN,Closed by arrest,49
+2011,IN,Closed without arrest,7
+2011,IN,Open/No arrest,40
+2011,KY,Closed by arrest,29
+2011,KY,Open/No arrest,24
+2011,LA,Closed by arrest,111
+2011,LA,Closed without arrest,19
+2011,LA,Open/No arrest,145
+2011,MA,Closed by arrest,30
+2011,MA,Open/No arrest,34
+2011,MD,Closed by arrest,77
+2011,MD,Closed without arrest,12
+2011,MD,Open/No arrest,108
+2011,MI,Closed by arrest,116
+2011,MI,Closed without arrest,5
+2011,MI,Open/No arrest,225
+2011,MN,Closed by arrest,16
+2011,MN,Closed without arrest,5
+2011,MN,Open/No arrest,14
+2011,MO,Closed by arrest,150
+2011,MO,Closed without arrest,4
+2011,MO,Open/No arrest,70
+2011,NC,Closed by arrest,63
+2011,NC,Closed without arrest,5
+2011,NC,Open/No arrest,15
+2011,NE,Closed by arrest,19
+2011,NE,Closed without arrest,2
+2011,NE,Open/No arrest,18
+2011,NM,Closed by arrest,28
+2011,NM,Closed without arrest,2
+2011,NM,Open/No arrest,8
+2011,NV,Closed by arrest,61
+2011,NV,Closed without arrest,4
+2011,NV,Open/No arrest,23
+2011,NY,Closed by arrest,17
+2011,NY,Open/No arrest,19
+2011,OH,Closed by arrest,72
+2011,OH,Closed without arrest,14
+2011,OH,Open/No arrest,70
+2011,OK,Closed by arrest,66
+2011,OK,Closed without arrest,13
+2011,OK,Open/No arrest,34
+2011,PA,Closed by arrest,200
+2011,PA,Closed without arrest,14
+2011,PA,Open/No arrest,154
+2011,TN,Closed by arrest,115
+2011,TN,Closed without arrest,16
+2011,TN,Open/No arrest,40
+2011,TX,Closed by arrest,201
+2011,TX,Closed without arrest,42
+2011,TX,Open/No arrest,140
+2011,VA,Closed by arrest,30
+2011,VA,Open/No arrest,7
+2011,wI,Closed by arrest,57
+2011,wI,Closed without arrest,3
+2011,wI,Open/No arrest,29
+2012,AL,Closed by arrest,33
+2012,AL,Closed without arrest,10
+2012,AL,Open/No arrest,25
+2012,AZ,Closed by arrest,64
+2012,AZ,Closed without arrest,21
+2012,AZ,Open/No arrest,41
+2012,CA,Closed by arrest,416
+2012,CA,Closed without arrest,23
+2012,CA,Open/No arrest,335
+2012,CO,Closed by arrest,23
+2012,CO,Closed without arrest,4
+2012,CO,Open/No arrest,13
+2012,DC,Closed by arrest,51
+2012,DC,Closed without arrest,6
+2012,DC,Open/No arrest,31
+2012,FL,Closed by arrest,85
+2012,FL,Closed without arrest,13
+2012,FL,Open/No arrest,79
+2012,GA,Closed by arrest,74
+2012,GA,Closed without arrest,3
+2012,GA,Open/No arrest,24
+2012,IL,Closed by arrest,136
+2012,IL,Closed without arrest,42
+2012,IL,Open/No arrest,327
+2012,IN,Closed by arrest,56
+2012,IN,Closed without arrest,12
+2012,IN,Open/No arrest,28
+2012,KY,Closed by arrest,30
+2012,KY,Open/No arrest,32
+2012,LA,Closed by arrest,124
+2012,LA,Closed without arrest,20
+2012,LA,Open/No arrest,129
+2012,MA,Closed by arrest,37
+2012,MA,Open/No arrest,22
+2012,MD,Closed by arrest,86
+2012,MD,Closed without arrest,12
+2012,MD,Open/No arrest,118
+2012,MI,Closed by arrest,139
+2012,MI,Closed without arrest,4
+2012,MI,Open/No arrest,243
+2012,MN,Closed by arrest,23
+2012,MN,Closed without arrest,1
+2012,MN,Open/No arrest,18
+2012,MO,Closed by arrest,133
+2012,MO,Closed without arrest,3
+2012,MO,Open/No arrest,81
+2012,NC,Closed by arrest,56
+2012,NC,Closed without arrest,1
+2012,NC,Open/No arrest,15
+2012,NE,Closed by arrest,16
+2012,NE,Closed without arrest,1
+2012,NE,Open/No arrest,22
+2012,NM,Closed by arrest,32
+2012,NM,Closed without arrest,6
+2012,NM,Open/No arrest,8
+2012,NV,Closed by arrest,55
+2012,NV,Closed without arrest,5
+2012,NV,Open/No arrest,21
+2012,NY,Closed by arrest,17
+2012,NY,Open/No arrest,33
+2012,OH,Closed by arrest,64
+2012,OH,Closed without arrest,15
+2012,OH,Open/No arrest,64
+2012,OK,Closed by arrest,70
+2012,OK,Closed without arrest,5
+2012,OK,Open/No arrest,49
+2012,PA,Closed by arrest,216
+2012,PA,Closed without arrest,12
+2012,PA,Open/No arrest,148
+2012,TN,Closed by arrest,140
+2012,TN,Closed without arrest,9
+2012,TN,Open/No arrest,48
+2012,TX,Closed by arrest,220
+2012,TX,Closed without arrest,32
+2012,TX,Open/No arrest,161
+2012,VA,Closed by arrest,32
+2012,VA,Open/No arrest,12
+2012,wI,Closed by arrest,57
+2012,wI,Closed without arrest,2
+2012,wI,Open/No arrest,34
+2013,AL,Closed by arrest,35
+2013,AL,Closed without arrest,8
+2013,AL,Open/No arrest,21
+2013,AZ,Closed by arrest,72
+2013,AZ,Closed without arrest,18
+2013,AZ,Open/No arrest,34
+2013,CA,Closed by arrest,329
+2013,CA,Closed without arrest,8
+2013,CA,Open/No arrest,273
+2013,CO,Closed by arrest,19
+2013,CO,Closed without arrest,7
+2013,CO,Open/No arrest,16
+2013,DC,Closed by arrest,54
+2013,DC,Closed without arrest,16
+2013,DC,Open/No arrest,34
+2013,FL,Closed by arrest,93
+2013,FL,Closed without arrest,22
+2013,FL,Open/No arrest,84
+2013,GA,Closed by arrest,69
+2013,GA,Closed without arrest,6
+2013,GA,Open/No arrest,29
+2013,IL,Closed by arrest,133
+2013,IL,Closed without arrest,24
+2013,IL,Open/No arrest,266
+2013,IN,Closed by arrest,70
+2013,IN,Closed without arrest,18
+2013,IN,Open/No arrest,37
+2013,KY,Closed by arrest,28
+2013,KY,Open/No arrest,20
+2013,LA,Closed by arrest,92
+2013,LA,Closed without arrest,5
+2013,LA,Open/No arrest,109
+2013,MA,Closed by arrest,23
+2013,MA,Open/No arrest,19
+2013,MD,Closed by arrest,92
+2013,MD,Closed without arrest,13
+2013,MD,Open/No arrest,126
+2013,MI,Closed by arrest,126
+2013,MI,Closed without arrest,3
+2013,MI,Open/No arrest,208
+2013,MN,Closed by arrest,16
+2013,MN,Closed without arrest,7
+2013,MN,Open/No arrest,18
+2013,MO,Closed by arrest,122
+2013,MO,Closed without arrest,8
+2013,MO,Open/No arrest,91
+2013,NC,Closed by arrest,56
+2013,NC,Closed without arrest,6
+2013,NC,Open/No arrest,20
+2013,NE,Closed by arrest,26
+2013,NE,Closed without arrest,2
+2013,NE,Open/No arrest,12
+2013,NM,Closed by arrest,17
+2013,NM,Closed without arrest,11
+2013,NM,Open/No arrest,5
+2013,NV,Closed by arrest,69
+2013,NV,Closed without arrest,10
+2013,NV,Open/No arrest,18
+2013,NY,Closed by arrest,16
+2013,NY,Open/No arrest,31
+2013,OH,Closed by arrest,84
+2013,OH,Closed without arrest,11
+2013,OH,Open/No arrest,73
+2013,OK,Closed by arrest,83
+2013,OK,Closed without arrest,4
+2013,OK,Open/No arrest,38
+2013,PA,Closed by arrest,154
+2013,PA,Closed without arrest,4
+2013,PA,Open/No arrest,137
+2013,TN,Closed by arrest,108
+2013,TN,Closed without arrest,5
+2013,TN,Open/No arrest,54
+2013,TX,Closed by arrest,273
+2013,TX,Closed without arrest,53
+2013,TX,Open/No arrest,160
+2013,VA,Closed by arrest,29
+2013,VA,Closed without arrest,2
+2013,VA,Open/No arrest,6
+2013,wI,Closed by arrest,65
+2013,wI,Closed without arrest,4
+2013,wI,Open/No arrest,32
+2014,AL,Closed by arrest,34
+2014,AL,Closed without arrest,4
+2014,AL,Open/No arrest,14
+2014,AZ,Closed by arrest,58
+2014,AZ,Closed without arrest,10
+2014,AZ,Open/No arrest,49
+2014,CA,Closed by arrest,332
+2014,CA,Closed without arrest,12
+2014,CA,Open/No arrest,265
+2014,CO,Closed by arrest,11
+2014,CO,Closed without arrest,5
+2014,CO,Open/No arrest,15
+2014,DC,Closed by arrest,58
+2014,DC,Closed without arrest,4
+2014,DC,Open/No arrest,43
+2014,FL,Closed by arrest,91
+2014,FL,Closed without arrest,24
+2014,FL,Open/No arrest,96
+2014,GA,Closed by arrest,62
+2014,GA,Closed without arrest,6
+2014,GA,Open/No arrest,50
+2014,IL,Closed by arrest,125
+2014,IL,Closed without arrest,24
+2014,IL,Open/No arrest,269
+2014,IN,Closed by arrest,78
+2014,IN,Closed without arrest,10
+2014,IN,Open/No arrest,50
+2014,KY,Closed by arrest,42
+2014,KY,Open/No arrest,16
+2014,LA,Closed by arrest,81
+2014,LA,Closed without arrest,19
+2014,LA,Open/No arrest,115
+2014,MA,Closed by arrest,29
+2014,MA,Open/No arrest,26
+2014,MD,Closed by arrest,86
+2014,MD,Closed without arrest,13
+2014,MD,Open/No arrest,112
+2014,MI,Closed by arrest,152
+2014,MI,Open/No arrest,142
+2014,MN,Closed by arrest,17
+2014,MN,Closed without arrest,5
+2014,MN,Open/No arrest,11
+2014,MO,Closed by arrest,117
+2014,MO,Closed without arrest,6
+2014,MO,Open/No arrest,118
+2014,NC,Closed by arrest,47
+2014,NC,Closed without arrest,2
+2014,NC,Open/No arrest,17
+2014,NE,Closed by arrest,23
+2014,NE,Closed without arrest,1
+2014,NE,Open/No arrest,8
+2014,NM,Closed by arrest,20
+2014,NM,Closed without arrest,2
+2014,NM,Open/No arrest,6
+2014,NV,Closed by arrest,85
+2014,NV,Closed without arrest,10
+2014,NV,Open/No arrest,29
+2014,NY,Closed by arrest,20
+2014,NY,Closed without arrest,2
+2014,NY,Open/No arrest,41
+2014,OH,Closed by arrest,76
+2014,OH,Closed without arrest,18
+2014,OH,Open/No arrest,59
+2014,OK,Closed by arrest,56
+2014,OK,Closed without arrest,6
+2014,OK,Open/No arrest,31
+2014,PA,Closed by arrest,155
+2014,PA,Closed without arrest,8
+2014,PA,Open/No arrest,157
+2014,TN,Closed by arrest,113
+2014,TN,Closed without arrest,9
+2014,TN,Open/No arrest,58
+2014,TX,Closed by arrest,266
+2014,TX,Closed without arrest,45
+2014,TX,Open/No arrest,203
+2014,VA,Closed by arrest,26
+2014,VA,Closed without arrest,7
+2014,VA,Open/No arrest,9
+2014,wI,Closed by arrest,51
+2014,wI,Closed without arrest,3
+2014,wI,Open/No arrest,33
+2015,AL,Closed by arrest,44
+2015,AL,Closed without arrest,3
+2015,AL,Open/No arrest,31
+2015,AZ,Closed by arrest,46
+2015,AZ,Closed without arrest,9
+2015,AZ,Open/No arrest,61
+2015,CA,Closed by arrest,358
+2015,CA,Closed without arrest,25
+2015,CA,Open/No arrest,287
+2015,CO,Closed by arrest,23
+2015,CO,Closed without arrest,7
+2015,CO,Open/No arrest,23
+2015,DC,Closed by arrest,80
+2015,DC,Closed without arrest,10
+2015,DC,Open/No arrest,72
+2015,FL,Closed by arrest,85
+2015,FL,Closed without arrest,19
+2015,FL,Open/No arrest,110
+2015,GA,Closed by arrest,83
+2015,GA,Closed without arrest,8
+2015,GA,Open/No arrest,46
+2015,IL,Closed by arrest,120
+2015,IL,Closed without arrest,20
+2015,IL,Open/No arrest,347
+2015,IN,Closed by arrest,86
+2015,IN,Closed without arrest,9
+2015,IN,Open/No arrest,49
+2015,KY,Closed by arrest,37
+2015,KY,Open/No arrest,44
+2015,LA,Closed by arrest,81
+2015,LA,Closed without arrest,17
+2015,LA,Open/No arrest,131
+2015,MA,Closed by arrest,20
+2015,MA,Open/No arrest,19
+2015,MD,Closed by arrest,87
+2015,MD,Closed without arrest,14
+2015,MD,Open/No arrest,241
+2015,MI,Closed by arrest,139
+2015,MI,Open/No arrest,141
+2015,MN,Closed by arrest,24
+2015,MN,Closed without arrest,5
+2015,MN,Open/No arrest,19
+2015,MO,Closed by arrest,133
+2015,MO,Closed without arrest,10
+2015,MO,Open/No arrest,155
+2015,NC,Closed by arrest,65
+2015,NC,Closed without arrest,9
+2015,NC,Open/No arrest,23
+2015,NE,Closed by arrest,29
+2015,NE,Closed without arrest,4
+2015,NE,Open/No arrest,17
+2015,NM,Closed by arrest,29
+2015,NM,Closed without arrest,11
+2015,NM,Open/No arrest,10
+2015,NV,Closed by arrest,73
+2015,NV,Closed without arrest,16
+2015,NV,Open/No arrest,42
+2015,NY,Closed by arrest,18
+2015,NY,Open/No arrest,23
+2015,OH,Closed by arrest,70
+2015,OH,Closed without arrest,8
+2015,OH,Open/No arrest,58
+2015,OK,Closed by arrest,75
+2015,OK,Closed without arrest,10
+2015,OK,Open/No arrest,42
+2015,PA,Closed by arrest,150
+2015,PA,Closed without arrest,4
+2015,PA,Open/No arrest,183
+2015,TN,Closed by arrest,141
+2015,TN,Closed without arrest,14
+2015,TN,Open/No arrest,61
+2015,TX,Closed by arrest,301
+2015,TX,Closed without arrest,47
+2015,TX,Open/No arrest,237
+2015,VA,Closed by arrest,32
+2015,VA,Open/No arrest,10
+2015,wI,Closed by arrest,82
+2015,wI,Closed without arrest,7
+2015,wI,Open/No arrest,57
+2016,AL,Closed by arrest,59
+2016,AL,Closed without arrest,2
+2016,AL,Open/No arrest,30
+2016,AZ,Closed by arrest,51
+2016,AZ,Closed without arrest,17
+2016,AZ,Open/No arrest,78
+2016,CA,Closed by arrest,372
+2016,CA,Closed without arrest,11
+2016,CA,Open/No arrest,329
+2016,CO,Closed by arrest,21
+2016,CO,Closed without arrest,11
+2016,CO,Open/No arrest,25
+2016,DC,Closed by arrest,62
+2016,DC,Closed without arrest,2
+2016,DC,Open/No arrest,71
+2016,FL,Closed by arrest,78
+2016,FL,Closed without arrest,24
+2016,FL,Open/No arrest,100
+2016,GA,Closed by arrest,75
+2016,GA,Closed without arrest,4
+2016,GA,Open/No arrest,69
+2016,IL,Closed by arrest,110
+2016,IL,Closed without arrest,15
+2016,IL,Open/No arrest,640
+2016,IN,Closed by arrest,57
+2016,IN,Closed without arrest,6
+2016,IN,Open/No arrest,87
+2016,KY,Closed by arrest,67
+2016,KY,Open/No arrest,50
+2016,LA,Closed by arrest,69
+2016,LA,Closed without arrest,6
+2016,LA,Open/No arrest,145
+2016,MA,Closed by arrest,21
+2016,MA,Open/No arrest,25
+2016,MD,Closed by arrest,72
+2016,MD,Closed without arrest,5
+2016,MD,Open/No arrest,243
+2016,MI,Closed by arrest,131
+2016,MI,Open/No arrest,169
+2016,MN,Closed by arrest,15
+2016,MN,Closed without arrest,1
+2016,MN,Open/No arrest,18
+2016,MO,Closed by arrest,112
+2016,MO,Closed without arrest,19
+2016,MO,Open/No arrest,178
+2016,NC,Closed by arrest,68
+2016,NC,Closed without arrest,3
+2016,NC,Open/No arrest,37
+2016,NE,Closed by arrest,19
+2016,NE,Open/No arrest,10
+2016,NM,Closed by arrest,38
+2016,NM,Closed without arrest,8
+2016,NM,Open/No arrest,17
+2016,NV,Closed by arrest,91
+2016,NV,Closed without arrest,14
+2016,NV,Open/No arrest,53
+2016,NY,Closed by arrest,212
+2016,NY,Closed without arrest,11
+2016,NY,Open/No arrest,157
+2016,OH,Closed by arrest,82
+2016,OH,Closed without arrest,7
+2016,OH,Open/No arrest,77
+2016,OK,Closed by arrest,64
+2016,OK,Closed without arrest,9
+2016,OK,Open/No arrest,67
+2016,PA,Closed by arrest,115
+2016,PA,Closed without arrest,6
+2016,PA,Open/No arrest,215
+2016,TN,Closed by arrest,175
+2016,TN,Closed without arrest,7
+2016,TN,Open/No arrest,97
+2016,TX,Closed by arrest,278
+2016,TX,Closed without arrest,42
+2016,TX,Open/No arrest,360
+2016,VA,Closed by arrest,34
+2016,VA,Closed without arrest,4
+2016,VA,Open/No arrest,22
+2016,wI,Closed by arrest,83
+2016,wI,Closed without arrest,4
+2016,wI,Open/No arrest,52
+2017,AL,Closed by arrest,45
+2017,AL,Closed without arrest,1
+2017,AL,Open/No arrest,52
+2017,AZ,Closed by arrest,68
+2017,AZ,Closed without arrest,4
+2017,AZ,Open/No arrest,89
+2017,CA,Closed by arrest,267
+2017,CA,Closed without arrest,20
+2017,CA,Open/No arrest,271
+2017,CO,Closed by arrest,3
+2017,CO,Open/No arrest,5
+2017,FL,Closed by arrest,75
+2017,FL,Closed without arrest,17
+2017,FL,Open/No arrest,139
+2017,GA,Closed by arrest,7
+2017,GA,Closed without arrest,2
+2017,GA,Open/No arrest,10
+2017,IL,Closed by arrest,56
+2017,IL,Closed without arrest,19
+2017,IL,Open/No arrest,579
+2017,IN,Closed by arrest,64
+2017,IN,Closed without arrest,7
+2017,IN,Open/No arrest,84
+2017,KY,Closed by arrest,52
+2017,KY,Open/No arrest,53
+2017,LA,Closed by arrest,89
+2017,LA,Closed without arrest,7
+2017,LA,Open/No arrest,154
+2017,MA,Closed by arrest,22
+2017,MA,Open/No arrest,32
+2017,MD,Closed by arrest,93
+2017,MD,Closed without arrest,11
+2017,MD,Open/No arrest,236
+2017,MI,Closed by arrest,127
+2017,MI,Open/No arrest,139
+2017,MN,Closed by arrest,3
+2017,MN,Open/No arrest,4
+2017,MO,Closed by arrest,139
+2017,MO,Closed without arrest,11
+2017,MO,Open/No arrest,202
+2017,NC,Closed by arrest,58
+2017,NC,Closed without arrest,2
+2017,NC,Open/No arrest,29
+2017,NE,Closed by arrest,20
+2017,NE,Open/No arrest,9
+2017,NM,Closed by arrest,38
+2017,NM,Closed without arrest,2
+2017,NM,Open/No arrest,35
+2017,NV,Closed by arrest,76
+2017,NV,Closed without arrest,69
+2017,NV,Open/No arrest,72
+2017,NY,Closed by arrest,189
+2017,NY,Closed without arrest,7
+2017,NY,Open/No arrest,127
+2017,OH,Closed by arrest,84
+2017,OH,Closed without arrest,10
+2017,OH,Open/No arrest,117
+2017,OK,Closed by arrest,22
+2017,OK,Open/No arrest,32
+2017,PA,Closed by arrest,21
+2017,PA,Open/No arrest,38
+2017,TN,Closed by arrest,148
+2017,TN,Closed without arrest,14
+2017,TN,Open/No arrest,128
+2017,TX,Closed by arrest,98
+2017,TX,Closed without arrest,25
+2017,TX,Open/No arrest,201
+2017,wI,Closed by arrest,74
+2017,wI,Closed without arrest,3
+2017,wI,Open/No arrest,42
