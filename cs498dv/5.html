@@ -101,10 +101,6 @@
         </div>
 
         <div class="section">
-          <svg id="overviewCircles" width="960", height="960"></svg>
-          <div id="section2Tooltip" class="tooltip"></div>
-        </div>
-        <div class="section">
           <div id="section3text">
             <h2>Outcomes By State</h2>
             <p>
@@ -192,15 +188,6 @@
     <!--Custom script -->
     <script type="text/javascript">
       $(document).ready(function(){
-        $("#fullpage").fullpage({
-          //fullpage options
-          licenseKey:"OPEN-SOURCE-GPLV3-LICENSE",
-          scrollBar: true,
-          navigation: true,
-          paddingTop: '80px',
-          verticalCentered: false,
-          anchors: ['intro', 'chart1', 'chart2', 'chart3', 'about']
-        });  
         loadData();
         drawOverViewCirlces();
       });
