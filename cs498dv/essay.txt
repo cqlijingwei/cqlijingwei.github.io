@@ -1,5 +1,14 @@
-1-The Question:
-What are the factors affecting an adult income the most?
+CS498dv Narrative Visualization Essay
+
+Messaging:
+With narrative visualization, the correlation between various factors and income from the first four scenarios can be investigated. The conclusion could be the strongest factor affecting adult income is education.
+From the last scenario, the message could be the correlation between various states and homicides frequency. The conclusion could be California, Illinois, Texas have the most homicides crimes.
+
+Narrative Structure
+Interactive slideshow. The structure is demonstrated using 5 scenarios that are trying to find correlations by telling a story. The visualization guides the user through the slides, with an order that best conveys the message, but still, it gives the user the flexibility to drill down and investigate further in each slide. For instance, the annotations are cleared after 25 seconds so the user gets the chance to look at the visualization and investigate further without distraction. Once the user finishes the investigation, he can use the navigation button to proceed to the next scene. Once the button is clicked, it triggers an action that opens a new page to render the next scene, and changes the parameters that trigger different data and annotations relevant to the scene.
+
+Visual Structure
+Interactive slideshow structure. There are multiple tooltips which show different information of data and the user is able to see the parameters by moving mouse to data points.
 
 2-The data:
 The data set from 1994 Census bureau database, it is known as “Census Adult Income”, or simply “Adult” data set. It can be found at UCI Machine Learning Repository. The data is a result of a survey of more than 30K adult in USA. It measures if the adult income exceeds $50,000, and how it is influenced by other the adult features like age, sex, occupation, etc.
@@ -11,6 +20,7 @@ We will use a narrative visualization structure to answer the mentioned question
 Regarding the scene layout, it is following the “Slide Show” narrative layout genre. It is a “Slide Show” genera because of the multiple slides with navigation buttons, so you can navigate backward and forwards by advancing slides. Regarding the structure, A scene template is used for visual consistency, so each scene has one chart and a brief description text that summarize the message that the chart is trying to convey. Also, the transition is used to keep the user oriented as much as possible. Regarding the ordering, since it is a slideshow, it follows a linear ordering. Finally, the messaging is utilized using annotations and text in order to communicate the message to the user. 
 
 5-The Annotations:
+
 The annotations are used as one of the messaging techniques to highlight and emphasize some of the interesting aspects of the visualization. For example, in scene 4, the annotation is used to point to the area where all post graduate studies involved a higher percentage of the >50K income group than the <=50K. Regarding the template, all the annotations follow one template to support visual consistency, it consists of a text, linked with a line(s) to a circle(s), which points to the area of interest. Since each scene has a different chart, the annotations are cleared between scenes for convenience. Also, to support the “interactive slideshow” narrative structure, the annotations are cleared after 25 seconds to give the user the chance to look at the visualization and investigate further without distraction.
 
 6-The parameters:
