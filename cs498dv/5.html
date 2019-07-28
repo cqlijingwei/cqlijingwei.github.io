@@ -28,28 +28,34 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.css" />
   </head>
   <body>
-    <div id="mainWindow">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li data-menuanchor="intro">
-              <a href="#intro">Introduction</a>
-            </li>
-            <li data-menuanchor="chart1">
-              <a href="#chart1">Homicides By State</a>
-            </li>
-            <li data-menuanchor="chart2">
-              <a href="#chart2">Close The Case</a>
-            </li>
-            <li data-menuanchor="chart3">
-              <a href="#chart3">Outcomes By State</a>
-            </li>
-            <li data-menuanchor="about">
-              <a href="#about">About the Visualization</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div>
+          <button onclick="window.location.href='4.html'">
+                < Previous
+          </button>
+        
+          <button onclick="window.location.href='1.html'" >
+                1 
+          </button>|
+          <button  onclick="window.location.href='2.html'" >
+                2
+          </button>|
+          <button onclick="window.location.href='3.html'" >
+                3
+          </button>|
+          <button style="background-color: #BFC1C1; cursor: default;" data-toggle="tooltip" data-placement="top" title="Current Scene">
+                4
+          </button>| 
+          <button onclick="window.location.href='5.html'">
+             5
+           </button>| 
+          <button style="cursor: not-allowed;" data-toggle="tooltip" data-placement="top" title="This is the Last Scene" >
+              Next >
+          </button>
+          
+          <button style="float: right;" onclick="window.open('about.html')" target="_blank">
+                About The Visualization
+          </button>
+      </div>
 
       <div id="fullpage">
         <div class="section">
