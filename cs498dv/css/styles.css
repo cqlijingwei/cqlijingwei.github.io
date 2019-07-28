@@ -27,17 +27,10 @@ button.active{
 }
 
 .cover {
-    position: absolute;
-    background-color: purple;
-    top: 0;
-    left: 0;
-    border: none;
-    color: white;
-    padding: 15px 25px;
+    border: 1px solid #000;
+    margin: 2px;
     text-align: center;
-    font-size: 30px;
-    width:96%;
-    margin-top: 0;
+    padding: 30px;
 }
 
 /* Popup container - can be anything you want */
