@@ -38,31 +38,29 @@
 
 <div class="cover">
 	<div id="introText">
-		<h1>10 Years' Homicides historical records in the United States </h1>
+		<h1><font size="15">Narrative Visualization</font></h1>
 		<h1>Jingwei Li CS498: Data Visualization, Summer 2019</h1>
 		<h3>
-		This visualization is based on a dataset of homicides in the United States collected and published by the Washington Post. The data is published
-		in a project on the Washington Post's <a href="https://github.com/washingtonpost/data-homicides">Github Page</a>. You can see their visualization 
-		of the dataset <a href="https://www.washingtonpost.com/graphics/2018/investigations/unsolved-homicide-database/">here</a>. Their visualization
-		looks at the individual city level because the data were collected from city police departments. For this visualization, I chose to look at 
-		the state level because there are 55 cities in the dataset and not every state is represented, so there is data for multiple cities in most states.
+		This visualization is based on two datasets. One is the factor affecting an adult income the most. They are statstics including income grouped by
+		job titles, grouped by marital status, grouped by education level and average weekly work hours. Another dataset is ten years' homicides statistics
+		in each state of USA. Both datasets were first seen in tableau sample work. And based on that, they have good potential to be formed as visualized
+		graphs, though tableau techs and any related libraries are used. Only d3 and required basic languages are used.
 		</h3>
 		<h3>
-		The data were prepared in Python and visualized using the Javascript library <a href="https://d3js.org/">D3</a>. The page also uses 
-		<a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://alvarotrigo.com/fullPage/">fullPage.js</a> for layout. Scroll down to get started!
+		There are in total five scenerios in the webpage. The first four are visualizations based on income distribution in various groups, from four 
+		different perspectives. And the last are homicides stats in the United States collected and published by the Washington Post. The visualization
+		looks at the individual city level because the data was collected from city police departments. In this scenario visualization, data is analysed
+		at the state level.
+		</h3>
+		<h3>
+		In addition, please be patient when the visualizations are being loaded. Some duration variables were set and after finishing, the visualization
+		should look well formatted while in the process, there are only frames and texts.
 		</h3>
 	</div>
 </div>
 
 
 <script type="text/javascript">
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
 
 function initVis(){
 	d3.csv("adult_all.csv", function(error, csv){ // <-D
