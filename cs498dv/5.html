@@ -42,18 +42,14 @@
           <button onclick="window.location.href='3.html'" >
               Scene 3
           </button>|
-          <button style="background-color: #BFC1C1; cursor: default;" data-toggle="tooltip" data-placement="top" title="Current Scene">
+          <button onclick="window.location.href='4.html'">
               Scene 4
           </button>| 
-          <button onclick="window.location.href='5.html'">
+          <button style="background-color: #BFC1C1; cursor: default;" data-toggle="tooltip" data-placement="top" title="Current Scene">
               Scene 5
            </button>| 
           <button style="cursor: not-allowed;" data-toggle="tooltip" data-placement="top" title="This is the Last Scene" >
               Next >
-          </button>
-          
-          <button style="float: right;" onclick="window.open('about.html')" target="_blank">
-                About The Visualization
           </button>
       </div>
 
@@ -118,70 +114,6 @@
               </div>
             </foreignobject>
           </svg>
-        </div>
-        <div class="section">
-          <h2>About the Visualization</h2>
-          <div class="card-body" >
-            <h4>Visualization Structure</h4>
-            <p>
-                The visualization follows an interactive slideshow structure. There are three slides which show different perspectives of 
-                the data and the user is able to change parameters of the visualization to view the data how she wants.
-            </p>
-            
-            <h4>Scenes</h4>
-            <p>
-                There are three scenes in the visualization. Visual consistency is maintained by using the same color palette for each scene and the same style 
-                for axes and annotations.
-            </p>
-            <p>The first scene shows a bar chart of the total number of homicides per state. This can be viewed
-                either as counts for each year or a running total from 2007 to the selected year. I chose a bar chart to represent this data because it is easy
-                to see which states had more homicides based on the size of the bar. The second scene shows the number of homicides grouped
-                by the outcome of the investigation (explained further on the slide). This slide uses circles so the user can clearly see the relative size of each
-                of these groups. The third scene is a grouped bar chart that combines the ideas explored in the first two scenes. Each state is represented
-                on the chart by a bar for each investigation outcome. This chart can be viewed in terms of raw counts like the first slide, or as a percentage of
-                the per-state total, which allows population-independent comparison between states.
-            </p>
-            
-            <h4>Annotations</h4>
-            <p>
-                There are 3 annotations in the visualization. On the first slide, when 2007 is selected, there is an annotation that points to Texas and Pennsylvania
-                as an example of why users need to consider each state's population when forming conclusions. On the third slide, there are two annotations. 
-                One is visible when the chart is shown in raw totals, the other when per-outcome percentages are shown. Both point out the place Illinois stands 
-                in the full dataset.
-            </p>
-            
-            <h4>User Interface Events</h4>
-            <p>
-                The user can navigate between slides either through links in the header at the top of the page or by scrolling. The header travels between slides
-                so it is always there as an indication to the user. The scrolling behavior is indicated by a set of dots on the right side of the page indicating
-                which page is currently visible. User interface events for the charts are discussed in the Triggers section.
-            </p>
-            
-            <h4>Parameters</h4>
-            <p>
-                The first and third charts use parameters to determine what to display. In the first chart, the year to display is passed to the drawing function
-                to determine which data to select. Additionally, there is a parameter that controls whether totals shown are for a single year or a running
-                total from 2007 to the selected year. On the third chart, there is a parameter that controls whether the bars represent a raw total or the 
-                per-outcome percentage of a state's total.
-            </p>
-            
-            <h4>Triggers</h4>
-            <p>
-                The triggers in this visualization are user interface controls. In the first visualization, the user drags a slider to select a year. In 
-                the first and third charts, checkboxes control how the data are displayed in the chart. When any of these controls are manipulated, the 
-                corresponding chart is updated.
-            </p>
-            <h4>Acknowledgements</h4>
-            <p>
-                This visualization relied on example code modified from the following sources.
-            </p>
-            <ul>
-                <li><a href="https://bl.ocks.org/d3noob/bdf28027e0ce70bd132edc64f1dd7ea4">https://bl.ocks.org/d3noob/bdf28027e0ce70bd132edc64f1dd7ea4</a></li>
-                <li><a href="https://bl.ocks.org/guilhermesimoes/e6356aa90a16163a6f917f53600a2b4a">https://bl.ocks.org/guilhermesimoes/e6356aa90a16163a6f917f53600a2b4a</a></li>
-                <li><a href="https://bl.ocks.org/mbostock/3887051">https://bl.ocks.org/mbostock/3887051</a></li>
-            </ul>
-            </div>
-        </div>
       </div>
     </div>
 
