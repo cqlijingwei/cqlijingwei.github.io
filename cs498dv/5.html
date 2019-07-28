@@ -49,30 +49,24 @@
            </button>
       </div>
 
-      <div id="fullpage">
-        <div class="section">     
-          <div class="section1text">
-            <h2>Homicides By State</h2>
-            <p>
-              We start by looking at the number of homicides in each state for the years collected in the dataset. You can either view bars as 
-              a count for a given year, or running total from 2007 to the selected year. Notice the data is collected over 10 years and the scale showing
-              cumulative totals for 2017 is roughly ten times that of 2007. This suggests the total number of homicides per year stayed relatively 
-              consistent year to year.
-            </p>
-          </div> 
+      <div>
+          <h2>Homicides By State</h2>
+          <h3>For this scenario, across-year data view is provided, and also cumulative counts. Move the bar and counts from different year 
+            would be shown.</h3>
+          <p>
+            We start by looking at the number of homicides in each state for the years collected in the dataset. You can either view bars as 
+            a count for a given year, or running total from 2007 to the selected year. Notice the data is collected over 10 years and the scale showing
+            cumulative totals for 2017 is roughly ten times that of 2007. This suggests the total number of homicides per year stayed relatively 
+            consistent year to year.
+          </p>
+        </div> 
 
-          <label><input id="showCumulativeCheckbox" type="checkbox" onchange="drawMap()"/>Show Cumulative Totals</label>
-          <input type="range" min="2007" max="2017" value="2007" id="yearSlider" oninput="drawMap()" onchange="drawMap()">
-          <p id="yearLabel"></p>
-          <svg id="yearsvg" width="960", height="600">
-            <foreignobject x="720" y="100" width="100", height="100">
-              <div id="populationAnnotation" class="defaultannotation">
-                Remember to think about size of states when comparing bars. Texas had a population roughly twice that of Pennsylvania in 2007!
-              </div>
-            </foreignobject>
-          </svg>
-        </div>
-    </div>
+        <label><input id="showCumulativeCheckbox" type="checkbox" onchange="drawMap()"/>Show Cumulative Totals</label>
+        <input type="range" min="2007" max="2017" value="2007" id="yearSlider" oninput="drawMap()" onchange="drawMap()">
+        <p id="yearLabel"></p>
+        <svg id="yearsvg" width="960", height="600">
+        </svg>
+      </div>
 
     <!--Custom script -->
     <script type="text/javascript">
