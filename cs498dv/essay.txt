@@ -4,81 +4,26 @@ Messaging:
 With narrative visualization, the correlation between various factors and income from the first four scenarios can be investigated. The conclusion could be the strongest factor affecting adult income is education.
 From the last scenario, the income distribution across states could be seen. The conclusion could be California, Illinois, Texas have the most well paid people.
 
-Narrative Structure
+Narrative Structure:
 Interactive slideshow. The structure is demonstrated using 5 scenarios that are trying to find correlations by telling a story. The visualization guides the user through the slides, with an order that best conveys the message, but still, it gives the user the flexibility to drill down and investigate further in each slide. For instance, the annotations are cleared after 25 seconds so the user gets the chance to look at the visualization and investigate further without distraction. Once the user finishes the investigation, he can use the navigation button to proceed to the next scene. Once the button is clicked, it triggers an action that opens a new page to render the next scene, and changes the parameters that trigger different data and annotations relevant to the scene.
 
-Visual Structure
-Interactive slideshow structure. There are multiple tooltips which show different information of data and the user is able to see the parameters by moving mouse to data points. By labels and points, it highlights to urge the viewers to focus on the variables. The other scenarios have similar and consistent display and view. Data description and graph legend explains the connections between different scenarios data.
+Visual Structure:
+Interactive slideshow structure. There are multiple tooltips which show different information of data and the user is able to see the parameters by moving mouse to data points. By labels and points, it highlights to urge the viewers to focus on the variables. The other scenarios have similar and consistent display and view. Data description and graph legend explains the connections between different scenarios data. Because of the multiple slides with navigation buttons, you can navigate backward and forwards by advancing slides. Regarding the structure, a scene template is used for visual consistency, so each scene has one chart and a brief description text that summarize the message that the chart is trying to convey. Also, the transition is used to keep the user oriented as much as possible. 
 
-Scenes
+Scenes:
 Scene 1: The narrative visualization starts with an overview of the entire data using a scatterplot chart with two dimensions that can best spread out the data, which are "Age" and "Weekly working hours". The adult income, that can be either above 50 thousand dollars (>50K) or below or equal to 50 thousand dollars (<=50K), was highlighted using a discrete color palette. We can notice that the area with the highest income is in the middle close to the average worker adult age (40 years) and average working hours (40). This means that other factors might have a larger effect. So further investigation is needed.
 Scene 2: Here we are looking on how Occupation affects the income. We plotted the Number of Adults for vs. each occupation segregated by the income.  We can see that Executive managers and specialized professionals have the higher wages among all other occupations. But still there is a higher percentage of those two groups taking wages less than 50K, which means that there might be other stronger factors that we might need to look at.
 Scene 3: In this scene, we are looking at the Marital Status factor. Similar to scene 2, we plotted the Number of Adults vs. the Marital Status segregated by the income.  We can see that even though the Married people, in general, have a higher percentage of the >50K than any other Marital Status, but still the majority of married people has income less than 50K, which means that the Marital Status probably not the most effective factor.
 Scene 4: Now if we look at the education level, "doctorate" for example, we find that education level has a high effect on adult income because the number of >50K group is higher than the <=50K/. the same for other postgraduate education categories, Graduate School, and Masters, which clearly proves that education level is affecting adult income.
 Scene 5: High income people distribution across states.
-The scenes are ordered so as to demonstrate the correlations between variables. From least correlation to most and obvious, the last graph is more like an overall view while the first four are specific to the categories.
+It follows a linear ordering, the scenes are ordered linearly so as to demonstrate the correlations between variables. From least correlation to most and obvious, the last graph is more like an overall view while the first four are specific to the categories.
 
+Annotations:
+Moving bubble circle. It is easy and obvious to see, and visually friendly. The annotations are used as one of the messaging techniques to highlight and emphasize some of the interesting aspects of the visualization. For example, in scene 1, the annotation is used to circle the area where highest income people are in the age - work hours distribution, by the definiton of a higher percentage of the >50K income group than the <=50K. Regarding the template, all the annotations follow one template to support visual consistency, it consists of a text, linked with a line(s) to a circle(s), which points to the area of interest. Since each scene has a different chart, the annotations are cleared between scenes for convenience. 
+Also, to support the “interactive slideshow” narrative structure, the annotations are cleared after 25 seconds to give the user the chance to look at the visualization and investigate further without distraction. The annotations are consistent and do not change over every scene.
 
-3-The narrative visualization:
-We will use a narrative visualization structure to answer the mentioned question. The “interactive slideshow” hybrid narrative structure is used. The structure is demonstrated using 4 scenes that are trying to answer the question by telling a story. As the “interactive slideshow” structure suggests, the visualization guides the user through the slides, with an order that best conveys the message, but still, it gives the user the flexibility to drill down and investigate further in each slide. For instance, the annotations are cleared after 25 seconds so the user gets the chance to look at the visualization and investigate further without distraction. Once the user finishes the investigation, he can use the navigation button to proceed to the next scene. Once the button is clicked, it triggers an action that opens a new page to render the next scene, and changes the parameters that trigger different data and annotations relevant to the scene.
+Parameters:
+Scene numbers are the main parameters that control the narrative visualization. As a response to the user action of advancing to the next scene, the button triggers an action based on the scene number to render the corresponding scene's chart, data, annotations and messaging. Hence, it controls the state machine of the narrative visualization. Also, for the last graph, year is the parameter to control scenes. Choose a year and you can see the corresponding stats and distribution in that year by a slider.
 
-4-The Scenes:
-Regarding the scene layout, it is following the “Slide Show” narrative layout genre. It is a “Slide Show” genera because of the multiple slides with navigation buttons, so you can navigate backward and forwards by advancing slides. Regarding the structure, A scene template is used for visual consistency, so each scene has one chart and a brief description text that summarize the message that the chart is trying to convey. Also, the transition is used to keep the user oriented as much as possible. Regarding the ordering, since it is a slideshow, it follows a linear ordering. Finally, the messaging is utilized using annotations and text in order to communicate the message to the user. 
-
-5-The Annotations:
-
-The annotations are used as one of the messaging techniques to highlight and emphasize some of the interesting aspects of the visualization. For example, in scene 4, the annotation is used to point to the area where all post graduate studies involved a higher percentage of the >50K income group than the <=50K. Regarding the template, all the annotations follow one template to support visual consistency, it consists of a text, linked with a line(s) to a circle(s), which points to the area of interest. Since each scene has a different chart, the annotations are cleared between scenes for convenience. Also, to support the “interactive slideshow” narrative structure, the annotations are cleared after 25 seconds to give the user the chance to look at the visualization and investigate further without distraction.
-
-6-The parameters:
-Scene numbers are the main parameters that control the narrative visualization. As a response to the user action of advancing to the next scene, the button triggers an action based on the scene number to render the corresponding scene's chart, data, annotations and messaging. Hence, it controls the state machine of the narrative visualization.
-
-7-The triggers:
-The main trigger is the user event of a ”button click”, which triggers the scene number parameter, which controls the state machine of the narrative visualization. Another trigger is the user event of placing the mouse on an element, which triggers the tooltip. Those available use events are communicated in the welcome page of the visualization in order to make sure the user is aware of the available triggers.
-
-8-The story:
-Scene 1: The narrative visualization starts with an overview of the entire data using a scatterplot chart with two dimensions that can best spread out the data, which are "Age" and "Weekly working hours". The adult income, that can be either above 50 thousand dollars (>50K) or below or equal to 50 thousand dollars (<=50K), was highlighted using a discrete color palette. We can notice that the area with the highest income is in the middle close to the average worker adult age (40 years) and average working hours (40). This means that other factors might have a larger effect. So further investigation is needed.
-Scene 2: Here we are looking on how Occupation affects the income. We plotted the Number of Adults for vs. each occupation segregated by the income.  We can see that Executive managers and specialized professionals have the higher wages among all other occupations. But still there is a higher percentage of those two groups taking wages less than 50K, which means that there might be other stronger factors that we might need to look at.
-Scene 3: In this scene, we are looking at the Marital Status factor. Similar to scene 2, we plotted the Number of Adults vs. the Marital Status segregated by the income.  We can see that even though the Married people, in general, have a higher percentage of the >50K than any other Marital Status, but still the majority of married people has income less than 50K, which means that the Marital Status probably not the most effective factor.
-Scene 4: Now if we look at the education level, "doctorate" for example, we find that education level has a high effect on adult income because the number of >50K group is higher than the <=50K/. the same for other postgraduate education categories, Graduate School, and Masters, which clearly proves that education level is affecting adult income.
-
-9-The message that the story trying to convey:
-In my opinion, the strongest factor affecting adult income is Education. What about yours?!
-
-10-Essay to rubric questions mapping:
-
-1-Does the narrative visualization correctly follow the hybrid structure as stated by the essay?
-Addressed in section 3 the narrative visualization
-
-2-Does the narrative visualization effectively utilize scenes?
-Addressed in section 4 the Scenes
-
-3-Does the narrative visualization effectively utilize annotations?
-Addressed in section 5 The Annotations
-
-4-Does the narrative visualization effectively utilize parameters?
-Addressed in section 6 The parameters
-
-5-Does the narrative visualization effectively utilize triggers?
-Addressed in section 7 The triggers
-
-第二部分
-
-Visualization Structure
-The visualization follows an interactive slideshow structure. There are three slides which show different perspectives of the data and the user is able to change parameters of the visualization to view the data how she wants.
-
-Scenes
-There are three scenes in the visualization. Visual consistency is maintained by using the same color palette for each scene and the same style for axes and annotations.
-
-The first scene shows a bar chart of the total number of homicides per state. This can be viewed either as counts for each year or a running total from 2007 to the selected year. I chose a bar chart to represent this data because it is easy to see which states had more homicides based on the size of the bar. The second scene shows the number of homicides grouped by the outcome of the investigation (explained further on the slide). This slide uses circles so the user can clearly see the relative size of each of these groups. The third scene is a grouped bar chart that combines the ideas explored in the first two scenes. Each state is represented on the chart by a bar for each investigation outcome. This chart can be viewed in terms of raw counts like the first slide, or as a percentage of the per-state total, which allows population-independent comparison between states.
-
-Annotations
-There are 3 annotations in the visualization. On the first slide, when 2007 is selected, there is an annotation that points to Texas and Pennsylvania as an example of why users need to consider each state's population when forming conclusions. On the third slide, there are two annotations. One is visible when the chart is shown in raw totals, the other when per-outcome percentages are shown. Both point out the place Illinois stands in the full dataset.
-
-User Interface Events
-The user can navigate between slides either through links in the header at the top of the page or by scrolling. The header travels between slides so it is always there as an indication to the user. The scrolling behavior is indicated by a set of dots on the right side of the page indicating which page is currently visible. User interface events for the charts are discussed in the Triggers section.
-
-Parameters
-The first and third charts use parameters to determine what to display. In the first chart, the year to display is passed to the drawing function to determine which data to select. Additionally, there is a parameter that controls whether totals shown are for a single year or a running total from 2007 to the selected year. On the third chart, there is a parameter that controls whether the bars represent a raw total or the per-outcome percentage of a state's total.
-
-Triggers
-The triggers in this visualization are user interface controls. In the first visualization, the user drags a slider to select a year. In the first and third charts, checkboxes control how the data are displayed in the chart. When any of these controls are manipulated, the corresponding chart is updated.
+Triggers:
+The main trigger is the user event of a ”button click”, which triggers the scene number parameter, which controls the state machine of the narrative visualization. Another trigger is the user event of placing the mouse on an element, which triggers the tooltip. Those available use events are communicated in the welcome page of the visualization in order to make sure the user is aware of the available triggers. Also, in the last graph, the triggers in this visualization are user interface controls. The user can drag a slider to select a year. Thus, corresponding stats and distribution would be shown. These triggers are easy to see, click and pass by through the mouse. Switch over scenes, check data points in scenes, slide over years are options to users in the narrative visualization.
