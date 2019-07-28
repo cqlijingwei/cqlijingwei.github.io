@@ -1,0 +1,9 @@
+DC stacked
+https://stackoverflow.com/questions/39514391/how-to-create-a-stacked-bar-chart-using-dc-js
+https://stackoverflow.com/questions/24737277/dc-js-how-to-create-a-row-chart-from-multiple-columns
+https://www.solinea.com/blog/coloring-dcjs-stacked-bar-charts
+https://groups.google.com/forum/#!topic/dc-js-user-group/SCnbPi6Xugc
+https://stackoverflow.com/questions/16766986/is-it-possible-to-group-by-multiple-dimensions-in-crossfilter
+https://dc-js.github.io/dc.js/docs/html/dc.geoChoroplethChart.html
+https://stackoverflow.com/questions/36867048/crossfilter-with-dc-js-choropleth-map
+http://dc-js.github.io/dc.js/vc/index.html

@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!--
+Prism by TEMPLATED
+templated.co @templatedco
+Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+	<title>Assignment 2</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script type="text/javascript" src="d3/d3.js"></script>
+	<style media="screen">
+	.linegraph {
+
+	}
+	.circle {
+		fill-opacity: 0.0;
+	}
+	.selected {
+		fill: #9932CC;
+		fill-opacity: 1.0;
+		stroke: #000000;
+
+		stroke-width: 1;
+		opacity: 0.25;
+	}
+	.viz {
+		background-color: none;
+	}
+	</style>
+</head>
+<body>
+
+
+	<!-- Banner -->
+	<section id="banner">
+		<div class="inner split">
+			<section>
+				<h2>Assignment 2<br><i><a href="https://github.com/suneman/socialdataanalysis2018/wiki">Social Data Analysis and Visualization</a></i></h2>
+			</section>
+			<section>
+				<section>
+					<p>This webpage explores data visualization and answers questions in accordance to assignment two, which consists of two sections:</p>
+					<ol>
+						<li><a href="#Part1">Telling Data Stories</a></li>
+						<li><a href="#Part2">Visualization of murders in New York City</a></li>
+					</ol>
+					<p>Unless otherwise specified, all figure references and diagrams are credit due to Edward Segel and Jeffrey Heer's paper <a href="http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf">Narrative Visualization: Telling Stories with Data</a> or to references within.</p>
+					<p>
+						If the page renders incorrectly - or images fail to show, an online version can be viewed <a href="https://dannydannydanny.github.io/oldpage/02806-Social-Data-Analysis-and-Visualization/assignment2/index.html">here.</a>
+					</p>
+					</section>
+				</section>
+			</div>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper style2 alt">
+			<div class="inner">
+
+				<!-- Part 1: Telling Data Stories -->
+				<div class="spotlight">
+					<div id="Part1" class="content">
+						<h2>Telling Data Stories</h2>
+						<a href="#" class="button alt" style="margin-bottom: 50px">Back To Top</a><br>
+
+						<h3>What is the Oxford English Dictionary's definition of a narrative?</h3>
+						<p>
+							As written in the article, the Oxford English Dictionary (OED) defines the word <b>Narrative</b> as:
+							<br />
+							<i>"An account of a series of events, facts, etc., given in order and with the establishing of connections between them."</i>
+							<br /> OED has since made the definition more concise:
+							<br /><b>Noun:</b> A spoken or written account of connected events; a story.
+						</p>
+
+						<h3>What is your favorite visualization among the examples in section 3? Explain why in a few words.</h3>
+						<p>
+							Amongst the five selected case studies presented by the authors, two stood out in particular. The <b>White House Budget Forecast</b> which - when compared to true outcome - gives an intruging and debatable insight to the undetering optimism of economists. There could be many interesting reasons for this behavior.
+						</p>
+						<img src="images/f1.png" alt="" height="100%" width="100%"/>
+						<p style="color:gray;"><i>Budget Forecasts Visualization extract</i></p>
+						<p>
+							Even more impressive, is the <b>Human Developement Trends</b> visualization, which - despite its outdated look - conveyed the most information. Without going into too much excruciating detail, the visualization gives plenty of room to explore while traversing a scripted story.
+						</p>
+						<img src="images/f2.png" alt="" height="100%" width="100%"/>
+						<p style="color:gray;"><i>Human Developement Trends extract</i></p>
+						<p>
+							Through the use of well-selected and evenly distributed examples, the visualization communicates central messages leaving plenty of room to pause, search for similair cases or even counter-examples. The author finds a sweet spot between overburdening the viewer with examples and leaving statistcal conclusions unexplained. Grouping the skillful story telling plot, with this vast data set and the well-crafted visualizations made re-enabling flash player every click worth it.
+						</p>
+						<h3>What's the point of Figure 7?</h3>
+						<p>
+							The goal of the entire paper is to <i>systematically review the design [of visualizations].</i> The authors select 58 visualizations from online journals, business articles and viuslazation research papers and examine them in detail. The analysis is expressed in the form of the table shown in figure 7. The table, which is described as a <i>"design space"</i> shows the 58 visualization, where each carries certain charactersistics which it may share with other visualizations.
+						</p>
+						<embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://roamix.github.io/2010-Narrative-InfoVis-6.pdf" width="600" height="780">
+							<p style="color:gray;"><i>Figure 7</i></p>
+							<p>
+								The narrative componenets of each visualization are identified and categorized. A visualzation may contain (+) or lack (-) a feature, or the feature may not be applicable (gray).
+								<ul>
+									<li>One of seven <b>genres</b></li>
+									<li>As few as zero but as many as eleven out of sixteen <b>visual narratives</b> which are grouped into three sub-categories</li>
+									<li>At least one of seventeen <b>navarrative structures</b>, which are also grouped into three sub-categories</li>
+								</ul>
+							</p>
+							<p>
+								Finally four red boxes show patterns which the authors have decided to highlight in the table.
+								<ol>
+									<li>Narrative formats</li>
+									<li>Consistency in interaction design</li>
+									<li>Consistent under-utilization of <i>“tacit tutorials”</i> and <i>“stimulating default views”</i></li>
+									<li>Under-utilization of common narrative messaging techniques</li>
+								</ol>
+								With this expansive categorization this table becomes somewhat daunting and overwhelming.
+							</p>
+
+							<h3>Use Figure 7 to find the most common design choice within each category for the Visual narrative and Narrative structure (the categories within visual narrative are 'visual structuring', 'highlighting', etc).</h3>
+							<p>
+								Although most design features are somewhat correlated with genres, each sub-category has a <i>most prominent feature</i>. They are shown in the table below:
+							</p>
+							<table style="width:100%">
+								<tr>
+									<th>Visual Narrative / Narrative Structure</th>
+									<th>Most Common Design Feature</th>
+								</tr>
+								<tr>
+									<td>Visual structuring</td>
+									<td>Consistent visual platform</td>
+								</tr>
+								<tr>
+									<td>Highlighting</td>
+									<td>Feature distinction</td>
+								</tr>
+								<tr>
+									<td>Transition guidance</td>
+									<td>Object continuety</td>
+								</tr>
+								<tr>
+									<td>Ordering</td>
+									<td>User directed path</td>
+								</tr>
+								<tr>
+									<td>Interactivity</td>
+									<td>Very limited interactivity</td>
+								</tr>
+								<tr>
+									<td>Messaging</td>
+									<td>Captions headlines</td>
+								</tr>
+							</table>
+
+							<h3>Check out Figure 8 and section 4.3.</h3>
+							<ul>
+								<li>
+									<h3>What is your favorite genre of narrative visualization?</h3>
+									<p>
+										Somewhere between an annotated charts and films lays our favorite narrative genre. Namely the <b>slideshow</b>. By telling a clear story chronologically, yet giving the reader the flexibility to stop, contemplate and explore along the way is a <i>best-of-both-worlds</i> kind of visualization.
+									</p>
+								</li>
+								<li>
+									<h3>What is your least favorite genre?</h3>
+									<p>
+										Considering the tools and technologies that are available, exploring a data set with a <b>magazine style</b> wall of text is a choice that better have a good reason. With the average attention span dropping through the floor, we'd assume most audiences prefer content that appeals to more than just the text-proccessing part of the brain.
+										<br />
+										In some cases - where copious background information is required - the wall of text may be the only way out.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Part 2: Viz 1 -->
+					<div class="spotlight">
+						<div id="Part2" class="content">
+							<h3>Part 2: Murders in New York City</h3>
+							<a href="#" class="button alt" style="margin-bottom: 50px">Back To Top</a>
+							<p>
+								The visualization to the right shows all murders in all of New York City over time. Each red dot is a murder,
+								and the timeline can be extended or shortened using the slider on the timeline.
+							</p>
+						</div>
+						<div class="viz">
+						</div>
+					</div>
+
+					<ul class="actions special">
+						<li><a href="#banner" class="button alt">Back To Top</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="mainPlot.js"></script>
+
+		</body>
+		</html>
