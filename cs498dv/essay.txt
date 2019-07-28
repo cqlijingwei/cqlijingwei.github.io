@@ -1,3 +1,5 @@
+We are trying to identify the factor(s) affecting an adult income the most. We can notice that the area with the highest income is in the middle close to the average worker adult age (40 years) and average working hours (40). This means that other factors might have a larger effect. Let us investigate further ...
+
 1-The Question:
 What are the factors affecting an adult income the most?
 
