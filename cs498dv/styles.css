@@ -1,0 +1,44 @@
+.bar {
+	fill:#80e5ff;
+	opacity: 50%;
+	border-style: solid;
+	border-width: 5px;
+	border-color: darkblue; 
+}
+
+.defaultannotation {
+	text-align: center;
+	font: 10px sans-serif;
+	background: #ccf5ff;
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
+	padding: 2px;
+}
+
+#populationAnnotation {
+	width: 100px;
+	height: 120px;
+}
+
+#illinoisAnnotation {
+	width: 100px;
+	height: 100px;
+}
+
+#mainWindow {
+	width: 75%;
+	margin: 0 auto;
+}
+
+#yearSlider, #yearLabel {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+
+svg {
+	display: block;
+	margin: auto;
+}
